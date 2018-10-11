@@ -46,10 +46,10 @@ header a div:hover{background:#b6b6b6;}
 header .fonts:hover{text-decoration:underline;}
 // 下拉详细信息
 #pull_down{width:$width;}
-#pull_down div{width:$width;background:#fefefe;/* position: absolute;opacity:0; */}
+#pull_down .outBox{width:$width;background:#fefefe;position: absolute;opacity:0;}
 //登陆信息
 #login_box{
-    height:398px;top:-398px;
+    height:398px;top:-398px;position: relative;
     & ul{
         width:1000px;
         height:317px;
@@ -90,8 +90,8 @@ header .fonts:hover{text-decoration:underline;}
             #username{width:275px;height:28px;}
             #password{width:275px;height:28px;}
             #checkcode{width:115px;height:28px;margin-bottom:12px;}
-            #checkbox{float:right;width:150px;margin-left:5px;height:40px;}
-            #change{text-align:right;text-decoration:underline;font-size:14px;float:right;color: #323232;}
+            #checkbox{float:right;width:150px;margin-left:5px;height:40px;font:italic bold 30px/40px arial;text-align: center;}
+            #change{text-align:right;text-decoration:underline;font-size:14px;float:right;color: #323232;cursor:pointer;}
             #clause{width:300px;height:38px;font-size: 12px;line-height:38px;color:#323232;
                 & a{color:#323232;text-decoration: underline;}}
             #sure{width:298px;height:38px;border:1px solid #323232;background:black;color:white;font-size:18px;outline:none;line-height: 38px;transition:0.5s;margin-bottom:5px;
@@ -99,24 +99,46 @@ header .fonts:hover{text-decoration:underline;}
                     display: inline-block;width: 15px;height:28px;vertical-align: middle;background: url(../images/index/bgpic.png) no-repeat -10px -164px;margin-left: 12px;
                 }}
             #sure:hover{background:white;color:black;} #sure:hover span{background:url(../images/index/bgpic.png) no-repeat -42px -164px;}
-            #remember{display:inline-block;width:130px;height:22px;line-height: 22px;font-size:14px;
+            #remember{display:inline-block;width:114px;height:22px;line-height: 22px;font-size:14px;text-align:left;
                 & div{float:left;height:14px;width:14px;border:1px solid #989898;}
                 & .checked{float: left;height:18px;width:18px;border:2px solid black;margin-right:5px;background:url(../images/index/check.png) no-repeat -3px -181px;}}
             #forgetPwd{float: right;font-size:14px;text-decoration:underline;margin-right:9px;color:#000;}
         }
     }
 }
-#register_box{height:398px;top:-398px;
+#register_box{height:398px;top:-398px;position: relative;
     & dl{width:1000px;height:317px;margin:40px auto;
         & ul li{width:300px;height:95px;float:left;margin-right:50px;color:#323232;font-size: 14px;& b{color:red;}}
         & ul li .lInput{width:275px;height: 28px;padding:5px;padding-left:18px;border:1px solid #989898;margin-top:10px;font-family:'Airal';font-weight: 900;outline: none; }
         & ul li:nth-child(3){margin:0;}
-        #sexBox>div{float:left;width:150px;height:40px;margin-top:10px;line-height:40px;& div{display:inline-block;vertical-align: middle;height:14px;width:14px;border:1px solid #989898;margin-right: 10px;}& .checked{width:18px;height:18px;border:2px solid #000;background:url(../images/index/check.png) no-repeat -3px -181px;}}
+        #sexBox>div{float:left;width:120px;height:40px;margin-top:10px;line-height:40px;position: relative;padding-left:30px;cursor: pointer;& div{display:inline-block;position: absolute;top:12px;left: 0;vertical-align: middle;height:14px;width:14px;border:1px solid #989898;margin-right: 10px;}& .checked{width:18px;height:18px;border:2px solid #000;background:url(../images/index/check.png) no-repeat -3px -181px;position: absolute;top:9px;left: 0}}
         #birthdayBox{margin-top:10px;& .selectBox{width:88px;height:38px;border:1px solid #989898;float:left;position:relative;margin-right:15px;& span{display:block;position:absolute;width:58px;height:38px;line-height:38px;text-align:center;padding-right:30px;font-size:14px;font-family:Airal;font-weight:900;}
         & select{height:38px;width:88px;position:relative;z-index:2;border:none;outline: none;opacity:0;& option{font-size:14px;font-family:Airal;font-weight:900;}}}
-        .selectBox:after{content:"";display:block;width:30px;height:38px;position: absolute;top:0;right:0;border-left:1px solid #989898;background: url(../images/index/selectbg.png) no-repeat center;pointer-events: none;}}& .sInput{width:118px;height:28px;padding:5px;padding-left:18px;display: block;margin-top:10px;border:1px solid #989898;outline:none;font-size:14px;font-family:Airal;font-weight:900;}
+        .selectBox:after{content:"";display:block;width:30px;height:38px;position: absolute;top:0;right:0;border-left:1px solid #989898;background: url(../images/index/selectbg.png) no-repeat center;pointer-events: none;}}#regCheckBox{width:300px;height:40px;margin-top: 10px;margin-bottom:5px;}
+        & .sInput{width:118px;height:28px;padding:5px;padding-left:18px;display: block;margin-right:15px;float:left;border:1px solid #989898;outline:none;font-size:14px;font-family:Airal;font-weight:900;}
+        #regCheckcode{width:120px;height:40px;float: left;font:italic bold 30px/40px arial;text-align: center; }
+        #changeCode{float:right;color:#323232;text-decoration:underline;}
+        #McheckBox{width:300px;height:40px;margin-top:10px;margin-bottom:5px;}
+        #getMobileCheck{border:none;width: 141px;height:40px;background:#838383;color:white;}
+        #regClause{width:300px;height:20px;font-size:12px;color:#323232;& a{
+            color:#323232;text-decoration: underline;
+        }}
+        #goReg{width:298px;height:38px;border:1px solid #323232;background: black;color:white;margin-top:10px;font-size:18px;outline:none;line-height: 38px;transition:0.5s;line-height:38px;padding:0;}
+        #goReg:after{content: '';display:inline-block;width:15px;height:28px;vertical-align:middle;background:url(../images/index/bgpic.png) no-repeat -10px -164px;margin-left:12px;}
+        #goReg:hover{background:white;color:black;}
+        #goReg:hover#goReg:after{background:url(../images/index/bgpic.png) no-repeat -42px -164px;}
     }}
-#search_box{height:80px;top:-80px;}
+#search_box{height:40px;top:-80px;padding:20px 0;position: relative;
+    #searchValue{width:1000px;height:40px;margin:0 auto;position:relative;
+        #searchInput{width:100%;height:100%;border:none;outline: none;font-size:24px;font-family:微软雅黑;font-weight:900;line-height:100%;color:#989898;}
+        #searchTxt{position:absolute;display:block;height:100%;font-size:24px;font-family:微软雅黑;line-height:40px;color:#989898;left:18px;}}
+    #searchBtnBox{height:50%;position: absolute;width: auto;top:25%;right:132px;
+        & button{width:32px;height:32px;margin-top:5px;margin-left:20px;border:none;border-radius:50%;outline:none;}
+        #searchbtn{background: url(../images/index/bgpic.png) no-repeat -136px  -161px;}
+        #closebtn{background: url(../images/index/bgpic.png) no-repeat -168px -129px;}
+        #searchbtn:hover{opacity: 0.7;}
+        #closebtn:hover{opacity: 0.7;}}
+    }
 // 导航栏
 nav{width:$width;height:50px;background:#454545;position:absolute;
     & ul{

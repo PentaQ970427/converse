@@ -29,7 +29,7 @@
             </div>
             <!-- 下拉详细信息 -->
             <div id="pull_down">
-                <div id="login_box">
+                <div class="outBox" id="login_box">
                     <ul>
                         <!-- 去注册 -->
                         <li>
@@ -50,7 +50,7 @@
                             <input type="text" id="username" placeholder="邮箱/手机" autocomplete="off">
                             <input type="text" name="" id="password" placeholder="账户密码" autocomplete="off">
                             <input type="text" name="" id="checkcode" value="" autocomplete="off">
-                            <div id="checkbox">验证码</div>
+                            <div id="checkbox"></div>
                             <div style="height:20px;width:300px;"><a href="" id="change">换一张</a></div>
                             <div id="clause">一旦登陆，即表明你同意匡威的<a href="">法律声明</a>和<a href="">使用规则</a></div>
                             <button type="button" name="" id="sure">登陆<span></span></button>
@@ -60,7 +60,7 @@
                     </ul>
                 </div>
                 <!-- 注册信息 -->
-                <div id="register_box">
+                <div class="outBox" id="register_box">
                     <dl>
                         <ul>
                             <li id="mobileNum">手机号码<b>*</b>
@@ -106,14 +106,36 @@
                         </ul>
                         <ul>
                             <li id="regCheck">验证码<b>*</b>
-                                <input class = 'sInput' type="text" placeholder="请输入验证码">
+                                <div id="regCheckBox">
+                                    <input class = 'sInput' class="inputRegCode" type="text" placeholder="请输入验证码">
+                                    <div id="regCheckcode">注册验证码</div>
+                                </div>
+                                <div style="width:300px;height:25px;"><a id="changeCode" href="">换一张</a></div>
                             </li>
-                            <li id="regCheckBox"></li>
-                            <li id="sureReg"></li>
+                            <li id="MobileCheckBox">
+                                短信验证码<b>*</b>
+                                <div id="McheckBox">
+                                    <input type="text" name="" id="inputMobileCode" class="sInput">
+                                    <button id="getMobileCheck">发送短信验证码</button>
+                                </div>
+                            </li>
+                            <li id="sureReg">
+                                <div id="regClause">一旦创建账户，即表明你同意匡威的<a href="">法律声明</a>和<a href="">使用规则</a></div>
+                                <button id="goReg">注册账户</button>
+                            </li>
                         </ul>
                     </dl>
                 </div>
-                <div id="search_box">搜索框</div>
+                <div class="outBox" id="search_box">
+                    <div id="searchValue">
+                        <span id="searchTxt">想找什么随便搜</span>
+                        <input id="searchInput" type="text" name="" placeholder="">
+                    </div>
+                    <div id='searchBtnBox'>
+                        <button type="button" name="button" id="searchbtn"></button>
+                        <button type="button" name="button" id="closebtn"></button>
+                    </div>
+                </div>
             </div>
             <!-- 导航栏 -->
             <nav>

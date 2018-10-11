@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #stickHeader {
   width: 100%;
   height: 130px; }
@@ -61,14 +62,16 @@ header .fonts:hover {
 #pull_down {
   width: 100%; }
 
-#pull_down div {
+#pull_down .outBox {
   width: 100%;
   background: #fefefe;
-  /* position: absolute;opacity:0; */ }
+  position: absolute;
+  opacity: 0; }
 
 #login_box {
   height: 398px;
-  top: -398px; }
+  top: -398px;
+  position: relative; }
   #login_box ul {
     width: 1000px;
     height: 317px;
@@ -160,13 +163,16 @@ header .fonts:hover {
         float: right;
         width: 150px;
         margin-left: 5px;
-        height: 40px; }
+        height: 40px;
+        font: italic bold 30px/40px arial;
+        text-align: center; }
       #login_box ul li:nth-child(3) #change {
         text-align: right;
         text-decoration: underline;
         font-size: 14px;
         float: right;
-        color: #323232; }
+        color: #323232;
+        cursor: pointer; }
       #login_box ul li:nth-child(3) #clause {
         width: 300px;
         height: 38px;
@@ -201,10 +207,11 @@ header .fonts:hover {
         background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
       #login_box ul li:nth-child(3) #remember {
         display: inline-block;
-        width: 130px;
+        width: 114px;
         height: 22px;
         line-height: 22px;
-        font-size: 14px; }
+        font-size: 14px;
+        text-align: left; }
         #login_box ul li:nth-child(3) #remember div {
           float: left;
           height: 14px;
@@ -226,7 +233,8 @@ header .fonts:hover {
 
 #register_box {
   height: 398px;
-  top: -398px; }
+  top: -398px;
+  position: relative; }
   #register_box dl {
     width: 1000px;
     height: 317px;
@@ -254,12 +262,18 @@ header .fonts:hover {
       margin: 0; }
     #register_box dl #sexBox > div {
       float: left;
-      width: 150px;
+      width: 120px;
       height: 40px;
       margin-top: 10px;
-      line-height: 40px; }
+      line-height: 40px;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer; }
       #register_box dl #sexBox > div div {
         display: inline-block;
+        position: absolute;
+        top: 12px;
+        left: 0;
         vertical-align: middle;
         height: 14px;
         width: 14px;
@@ -269,7 +283,10 @@ header .fonts:hover {
         width: 18px;
         height: 18px;
         border: 2px solid #000;
-        background: url(../images/index/check.png) no-repeat -3px -181px; }
+        background: url(../images/index/check.png) no-repeat -3px -181px;
+        position: absolute;
+        top: 9px;
+        left: 0; }
     #register_box dl #birthdayBox {
       margin-top: 10px; }
       #register_box dl #birthdayBox .selectBox {
@@ -313,22 +330,131 @@ header .fonts:hover {
         border-left: 1px solid #989898;
         background: url(../images/index/selectbg.png) no-repeat center;
         pointer-events: none; }
+    #register_box dl #regCheckBox {
+      width: 300px;
+      height: 40px;
+      margin-top: 10px;
+      margin-bottom: 5px; }
     #register_box dl .sInput {
       width: 118px;
       height: 28px;
       padding: 5px;
       padding-left: 18px;
       display: block;
-      margin-top: 10px;
+      margin-right: 15px;
+      float: left;
       border: 1px solid #989898;
       outline: none;
       font-size: 14px;
       font-family: Airal;
       font-weight: 900; }
+    #register_box dl #regCheckcode {
+      width: 120px;
+      height: 40px;
+      float: left;
+      font: italic bold 30px/40px arial;
+      text-align: center; }
+    #register_box dl #changeCode {
+      float: right;
+      color: #323232;
+      text-decoration: underline; }
+    #register_box dl #McheckBox {
+      width: 300px;
+      height: 40px;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+    #register_box dl #getMobileCheck {
+      border: none;
+      width: 141px;
+      height: 40px;
+      background: #838383;
+      color: white; }
+    #register_box dl #regClause {
+      width: 300px;
+      height: 20px;
+      font-size: 12px;
+      color: #323232; }
+      #register_box dl #regClause a {
+        color: #323232;
+        text-decoration: underline; }
+    #register_box dl #goReg {
+      width: 298px;
+      height: 38px;
+      border: 1px solid #323232;
+      background: black;
+      color: white;
+      margin-top: 10px;
+      font-size: 18px;
+      outline: none;
+      line-height: 38px;
+      transition: 0.5s;
+      line-height: 38px;
+      padding: 0; }
+    #register_box dl #goReg:after {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 28px;
+      vertical-align: middle;
+      background: url(../images/index/bgpic.png) no-repeat -10px -164px;
+      margin-left: 12px; }
+    #register_box dl #goReg:hover {
+      background: white;
+      color: black; }
+    #register_box dl #goReg:hover#goReg:after {
+      background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
 
 #search_box {
-  height: 80px;
-  top: -80px; }
+  height: 40px;
+  top: -80px;
+  padding: 20px 0;
+  position: relative; }
+  #search_box #searchValue {
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative; }
+    #search_box #searchValue #searchInput {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 24px;
+      font-family: 微软雅黑;
+      font-weight: 900;
+      line-height: 100%;
+      color: #989898; }
+    #search_box #searchValue #searchTxt {
+      position: absolute;
+      display: block;
+      height: 100%;
+      font-size: 24px;
+      font-family: 微软雅黑;
+      line-height: 40px;
+      color: #989898;
+      left: 18px; }
+  #search_box #searchBtnBox {
+    height: 50%;
+    position: absolute;
+    width: auto;
+    top: 25%;
+    right: 132px; }
+    #search_box #searchBtnBox button {
+      width: 32px;
+      height: 32px;
+      margin-top: 5px;
+      margin-left: 20px;
+      border: none;
+      border-radius: 50%;
+      outline: none; }
+    #search_box #searchBtnBox #searchbtn {
+      background: url(../images/index/bgpic.png) no-repeat -136px -161px; }
+    #search_box #searchBtnBox #closebtn {
+      background: url(../images/index/bgpic.png) no-repeat -168px -129px; }
+    #search_box #searchBtnBox #searchbtn:hover {
+      opacity: 0.7; }
+    #search_box #searchBtnBox #closebtn:hover {
+      opacity: 0.7; }
 
 nav {
   width: 100%;
