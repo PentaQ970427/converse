@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+html,body,div,p,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,img,fieldset,form,input{
+	margin:0;
+	padding:0;
+}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;}
+img{
+	display:block;
+	border:0;}
+h1,h2,h3,h4,h5,h6,strong,b{font-weight:normal;}
+em,i{font-style:normal;} 

@@ -1,0 +1,132 @@
+$width:100%;
+#stickHeader{
+    width:$width;
+    height:130px;
+}
+// header
+#headbox{
+    width:$width;
+    height:80px;
+    background:black;
+
+}
+header{
+    width:1111px;
+    height:80px;
+    margin:0 auto;
+    & a,span,p{
+        display:block;
+        color:white;
+        float:left;
+        height:100%;
+        font-size:12px;
+        margin:0 20px;
+        line-height:80px;
+        & div{
+            margin-top:25px;
+            width:30px;
+            height:30px;
+            border-radius:50%;
+            background-color:#454545;
+            text-align: center;
+            line-height:30px;
+            font-size:18px;
+        }}
+}
+#headLogo{
+    width:161px;height:19px;margin:30px 465px 0 0;
+    & img{width:100%;height:100%;}
+}
+#login_1{margin:0 6px 0 0;}
+#register{margin:0 0 0 6px;}
+#pdtsNum div{background-color:#930100;}
+header span div:hover{background:#b6b6b6;}
+header a div:hover{background:#b6b6b6;}
+#shoppingCar{margin-right:5px;}
+header .fonts:hover{text-decoration:underline;}
+// 下拉详细信息
+#pull_down{width:$width;}
+#pull_down div{width:$width;background:#fefefe;/* position: absolute;opacity:0; */}
+//登陆信息
+#login_box{
+    height:398px;top:-398px;
+    & ul{
+        width:1000px;
+        height:317px;
+        margin:40px auto;
+        & li{float:left}
+        // 去注册
+        & li:first-child{
+            width:209px;
+            height:100%;
+            border-right:1px solid #989898;
+            & p{
+                height:24px;line-height:100%;font-size:24px;margin-bottom: 20px;color:#323232;
+            }
+            & button{
+                width: 150px;height:40px;border:0;color:white;background:black;
+                font-size:18px;padding:0;line-height:40px;outline: none;border:1px solid black;transition:0.5s;
+                & span{
+                    display: inline-block;width: 15px;height:28px;vertical-align: middle;background: url(../images/index/bgpic.png) no-repeat -10px -164px;margin-left: 12px;
+                }
+            }
+            & button:hover{background:white;color:black;} & button:hover span{background:url(../images/index/bgpic.png) no-repeat -42px -164px;}
+        }
+        // 第三方登录
+        & li:nth-child(2){
+            width:360px;
+            height:100%;
+            padding-left:60px;
+            & p{height:24px;line-height: 100%;font-size:24px;color:#323232;margin-bottom:20px;}
+            & a{float: left;width:40px;height:40px;margin-right:11px;background:#454545;color:white;font-size: 36px;text-align:center;line-height: 45px;}
+        }
+        // 账号密码登陆
+        & li:nth-child(3){
+            width:309px;
+            height:100%;padding-left:60px;
+            border-left:1px solid #989898;
+            & p{height:24px;line-height:100%;font-size:24px;color:#323232;margin-bottom:20px;}
+            & input{outline:none;border:1px solid #989898;margin-bottom:20px;padding:5px;padding-left:18px;}
+            #username{width:275px;height:28px;}
+            #password{width:275px;height:28px;}
+            #checkcode{width:115px;height:28px;margin-bottom:12px;}
+            #checkbox{float:right;width:150px;margin-left:5px;height:40px;}
+            #change{text-align:right;text-decoration:underline;font-size:14px;float:right;color: #323232;}
+            #clause{width:300px;height:38px;font-size: 12px;line-height:38px;color:#323232;
+                & a{color:#323232;text-decoration: underline;}}
+            #sure{width:298px;height:38px;border:1px solid #323232;background:black;color:white;font-size:18px;outline:none;line-height: 38px;transition:0.5s;margin-bottom:5px;
+                & span{
+                    display: inline-block;width: 15px;height:28px;vertical-align: middle;background: url(../images/index/bgpic.png) no-repeat -10px -164px;margin-left: 12px;
+                }}
+            #sure:hover{background:white;color:black;} #sure:hover span{background:url(../images/index/bgpic.png) no-repeat -42px -164px;}
+            #remember{display:inline-block;width:130px;height:22px;line-height: 22px;font-size:14px;
+                & div{float:left;height:14px;width:14px;border:1px solid #989898;}
+                & .checked{float: left;height:18px;width:18px;border:2px solid black;margin-right:5px;background:url(../images/index/check.png) no-repeat -3px -181px;}}
+            #forgetPwd{float: right;font-size:14px;text-decoration:underline;margin-right:9px;color:#000;}
+        }
+    }
+}
+#register_box{height:398px;top:-398px;
+    & dl{width:1000px;height:317px;margin:40px auto;
+        & ul li{width:300px;height:95px;float:left;margin-right:50px;color:#323232;font-size: 14px;& b{color:red;}}
+        & ul li .lInput{width:275px;height: 28px;padding:5px;padding-left:18px;border:1px solid #989898;margin-top:10px;font-family:'Airal';font-weight: 900;outline: none; }
+        & ul li:nth-child(3){margin:0;}
+        #sexBox>div{float:left;width:150px;height:40px;margin-top:10px;line-height:40px;& div{display:inline-block;vertical-align: middle;height:14px;width:14px;border:1px solid #989898;margin-right: 10px;}& .checked{width:18px;height:18px;border:2px solid #000;background:url(../images/index/check.png) no-repeat -3px -181px;}}
+        #birthdayBox{margin-top:10px;& .selectBox{width:88px;height:38px;border:1px solid #989898;float:left;position:relative;margin-right:15px;& span{display:block;position:absolute;width:58px;height:38px;line-height:38px;text-align:center;padding-right:30px;font-size:14px;font-family:Airal;font-weight:900;}
+        & select{height:38px;width:88px;position:relative;z-index:2;border:none;outline: none;opacity:0;& option{font-size:14px;font-family:Airal;font-weight:900;}}}
+        .selectBox:after{content:"";display:block;width:30px;height:38px;position: absolute;top:0;right:0;border-left:1px solid #989898;background: url(../images/index/selectbg.png) no-repeat center;pointer-events: none;}}& .sInput{width:118px;height:28px;padding:5px;padding-left:18px;display: block;margin-top:10px;border:1px solid #989898;outline:none;font-size:14px;font-family:Airal;font-weight:900;}
+    }}
+#search_box{height:80px;top:-80px;}
+// 导航栏
+nav{width:$width;height:50px;background:#454545;position:absolute;
+    & ul{
+        width:805px;height:50px;margin:0 auto;
+        & li{float:left;width:134px;height:50px;text-align: center;line-height:50px;
+        & a{
+            display:block;
+            height:50px;
+            color:white;
+            font-size:20px;
+        }}
+    }}
+nav .classify:hover{text-decoration:underline;}
