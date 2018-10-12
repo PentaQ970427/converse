@@ -7,6 +7,7 @@ define(["jquery",'jquery-cookie'],function($){
             pullDown('#register','#register_box');
             pullDown('#search','#search_box');
             pullDown('#go_register','#register_box');
+            pullDown('#closebtn','#search_box');
             // 给生日下拉框添加年份
             for(var i = 2018;i >= 1918;i--){
                 var $node = $('<option value = '+i+'>'+i+'</option>');
@@ -104,6 +105,46 @@ define(["jquery",'jquery-cookie'],function($){
                 $('#regCheckcode').html(textCode(4));
                 ev.preventDefault();
             })
+            // banner加载图片
+            $.ajax({
+                url:'json/banner.json',
+                type:'GET',
+                async:false,
+                success:function(res){
+                    for(var i = 0;i < res.length;i++){
+                        $(`<div><img src=${res[i].img} alt=""></div>`).appendTo($('#bannerPic'));
+                    }
+                },
+                error:function(msg){
+                    alert(msg);
+                }
+            })
+            // banner图片自动滚动
+            var aLis = $('#bannerTitle').find('li');
+            var aBs = $('#bannerPic').find('div');
+            var iNow = 0;
+            var timer = null;
+            aLis.click(function(ev){
+                iNow = $(this).index();
+                ev.preventDefault();
+            })
+            timer = setInterval(function(){
+                iNow++;
+                console.log(iNow);
+                aLis.attr('class','').eq(iNow).attr('class','select');
+                if(iNow == aLis.size()-1){
+                    aLis.eq(0).attr('class','select');
+                    iNow ==0;
+                }
+                aBs.eq(iNow-1).stop().animate({opacity:0},1000);
+                aBs.eq(iNow).stop().animate({opacity:1},1000,function(){
+                    if(iNow == aBs.size()-1){
+                        aBs.eq(iNow).css('opacity','0');
+                        aBs.eq(0).stop().animate({opacity:1},1000);
+                        iNow = 0;
+                    }
+                })
+            },2000)
         })
         }
         // 登陆注册搜索下拉函数
@@ -111,7 +152,7 @@ define(["jquery",'jquery-cookie'],function($){
             $(node1).click(function(){
                 var oTop = $(node2).position().top;
                 if(oTop < 80){
-                    $("#pull_down").find('.outBox').css('display','none')
+                    $("#pull_down").find('.outBox').css('display','none');
                     $(node2).stop().animate({top:80},500).css('display','block').animate({opacity:1},500);
                     $('nav').stop().animate({top:$(node2).innerHeight()+80},500)
                 }else{
