@@ -1,0 +1,578 @@
+@charset "UTF-8";
+#stickHeader {
+  width: 100%;
+  height: 130px; }
+
+#headbox {
+  width: 100%;
+  height: 80px;
+  background: black; }
+
+header {
+  width: 1111px;
+  height: 80px;
+  margin: 0 auto; }
+  header a, header span, header p {
+    display: block;
+    color: white;
+    float: left;
+    height: 100%;
+    font-size: 12px;
+    margin: 0 20px;
+    line-height: 80px; }
+    header a div, header span div, header p div {
+      margin-top: 25px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #454545;
+      text-align: center;
+      line-height: 30px;
+      font-size: 18px; }
+
+#headLogo {
+  width: 161px;
+  height: 19px;
+  margin: 30px 465px 0 0; }
+  #headLogo img {
+    width: 100%;
+    height: 100%; }
+
+#login_1 {
+  margin: 0 6px 0 0; }
+
+#register {
+  margin: 0 0 0 6px; }
+
+#pdtsNum div {
+  background-color: #930100; }
+
+header span div:hover {
+  background: #b6b6b6; }
+
+header a div:hover {
+  background: #b6b6b6; }
+
+#shoppingCar {
+  margin-right: 5px; }
+
+header .fonts:hover {
+  text-decoration: underline; }
+
+#pull_down {
+  width: 100%;
+  height: auto; }
+
+#pull_down .outBox {
+  width: 100%;
+  background: #fefefe;
+  position: absolute;
+  opacity: 0;
+  z-index: 101; }
+
+#login_box {
+  height: 398px;
+  top: -398px;
+  position: relative; }
+  #login_box ul {
+    width: 1000px;
+    height: 317px;
+    margin: 40px auto; }
+    #login_box ul li {
+      float: left; }
+    #login_box ul li:first-child {
+      width: 209px;
+      height: 100%;
+      border-right: 1px solid #989898; }
+      #login_box ul li:first-child p {
+        height: 24px;
+        line-height: 100%;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #323232; }
+      #login_box ul li:first-child button {
+        width: 150px;
+        height: 40px;
+        border: 0;
+        color: white;
+        background: black;
+        font-size: 18px;
+        padding: 0;
+        line-height: 40px;
+        outline: none;
+        border: 1px solid black;
+        transition: 0.5s; }
+        #login_box ul li:first-child button span {
+          display: inline-block;
+          width: 15px;
+          height: 28px;
+          vertical-align: middle;
+          background: url(../images/index/bgpic.png) no-repeat -10px -164px;
+          margin-left: 12px; }
+      #login_box ul li:first-child button:hover {
+        background: white;
+        color: black; }
+      #login_box ul li:first-child button:hover span {
+        background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
+    #login_box ul li:nth-child(2) {
+      width: 360px;
+      height: 100%;
+      padding-left: 60px; }
+      #login_box ul li:nth-child(2) p {
+        height: 24px;
+        line-height: 100%;
+        font-size: 24px;
+        color: #323232;
+        margin-bottom: 20px; }
+      #login_box ul li:nth-child(2) a {
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-right: 11px;
+        background: #454545;
+        color: white;
+        font-size: 36px;
+        text-align: center;
+        line-height: 45px; }
+    #login_box ul li:nth-child(3) {
+      width: 309px;
+      height: 100%;
+      padding-left: 60px;
+      border-left: 1px solid #989898; }
+      #login_box ul li:nth-child(3) p {
+        height: 24px;
+        line-height: 100%;
+        font-size: 24px;
+        color: #323232;
+        margin-bottom: 20px; }
+      #login_box ul li:nth-child(3) input {
+        outline: none;
+        border: 1px solid #989898;
+        margin-bottom: 20px;
+        padding: 5px;
+        padding-left: 18px; }
+      #login_box ul li:nth-child(3) #username {
+        width: 275px;
+        height: 28px; }
+      #login_box ul li:nth-child(3) #password {
+        width: 275px;
+        height: 28px; }
+      #login_box ul li:nth-child(3) #checkcode {
+        width: 115px;
+        height: 28px;
+        margin-bottom: 12px; }
+      #login_box ul li:nth-child(3) #checkbox {
+        float: right;
+        width: 150px;
+        margin-left: 5px;
+        height: 40px;
+        font: italic bold 30px/40px arial;
+        text-align: center; }
+      #login_box ul li:nth-child(3) #change {
+        text-align: right;
+        text-decoration: underline;
+        font-size: 14px;
+        float: right;
+        color: #323232;
+        cursor: pointer; }
+      #login_box ul li:nth-child(3) #clause {
+        width: 300px;
+        height: 38px;
+        font-size: 12px;
+        line-height: 38px;
+        color: #323232; }
+        #login_box ul li:nth-child(3) #clause a {
+          color: #323232;
+          text-decoration: underline; }
+      #login_box ul li:nth-child(3) #sure {
+        width: 298px;
+        height: 38px;
+        border: 1px solid #323232;
+        background: black;
+        color: white;
+        font-size: 18px;
+        outline: none;
+        line-height: 38px;
+        transition: 0.5s;
+        margin-bottom: 5px; }
+        #login_box ul li:nth-child(3) #sure span {
+          display: inline-block;
+          width: 15px;
+          height: 28px;
+          vertical-align: middle;
+          background: url(../images/index/bgpic.png) no-repeat -10px -164px;
+          margin-left: 12px; }
+      #login_box ul li:nth-child(3) #sure:hover {
+        background: white;
+        color: black; }
+      #login_box ul li:nth-child(3) #sure:hover span {
+        background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
+      #login_box ul li:nth-child(3) #remember {
+        display: inline-block;
+        width: 114px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 14px;
+        text-align: left; }
+        #login_box ul li:nth-child(3) #remember div {
+          float: left;
+          height: 14px;
+          width: 14px;
+          border: 1px solid #989898; }
+        #login_box ul li:nth-child(3) #remember .checked {
+          float: left;
+          height: 18px;
+          width: 18px;
+          border: 2px solid black;
+          margin-right: 5px;
+          background: url(../images/index/check.png) no-repeat -3px -181px; }
+      #login_box ul li:nth-child(3) #forgetPwd {
+        float: right;
+        font-size: 14px;
+        text-decoration: underline;
+        margin-right: 9px;
+        color: #000; }
+
+#register_box {
+  height: 398px;
+  top: -398px;
+  position: relative; }
+  #register_box dl {
+    width: 1000px;
+    height: 317px;
+    margin: 40px auto; }
+    #register_box dl ul li {
+      width: 300px;
+      height: 95px;
+      float: left;
+      margin-right: 50px;
+      color: #323232;
+      font-size: 14px; }
+      #register_box dl ul li b {
+        color: red; }
+    #register_box dl ul li .lInput {
+      width: 275px;
+      height: 28px;
+      padding: 5px;
+      padding-left: 18px;
+      border: 1px solid #989898;
+      margin-top: 10px;
+      font-family: 'Airal';
+      font-weight: 900;
+      outline: none; }
+    #register_box dl ul li:nth-child(3) {
+      margin: 0; }
+    #register_box dl #sexBox > div {
+      float: left;
+      width: 120px;
+      height: 40px;
+      margin-top: 10px;
+      line-height: 40px;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer; }
+      #register_box dl #sexBox > div div {
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        left: 0;
+        vertical-align: middle;
+        height: 14px;
+        width: 14px;
+        border: 1px solid #989898;
+        margin-right: 10px; }
+      #register_box dl #sexBox > div .checked {
+        width: 18px;
+        height: 18px;
+        border: 2px solid #000;
+        background: url(../images/index/check.png) no-repeat -3px -181px;
+        position: absolute;
+        top: 9px;
+        left: 0; }
+    #register_box dl #birthdayBox {
+      margin-top: 10px; }
+      #register_box dl #birthdayBox .selectBox {
+        width: 88px;
+        height: 38px;
+        border: 1px solid #989898;
+        float: left;
+        position: relative;
+        margin-right: 15px; }
+        #register_box dl #birthdayBox .selectBox span {
+          display: block;
+          position: absolute;
+          width: 58px;
+          height: 38px;
+          line-height: 38px;
+          text-align: center;
+          padding-right: 30px;
+          font-size: 14px;
+          font-family: Airal;
+          font-weight: 900; }
+        #register_box dl #birthdayBox .selectBox select {
+          height: 38px;
+          width: 88px;
+          position: relative;
+          z-index: 2;
+          border: none;
+          outline: none;
+          opacity: 0; }
+          #register_box dl #birthdayBox .selectBox select option {
+            font-size: 14px;
+            font-family: Airal;
+            font-weight: 900; }
+      #register_box dl #birthdayBox .selectBox:after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 38px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-left: 1px solid #989898;
+        background: url(../images/index/selectbg.png) no-repeat center;
+        pointer-events: none; }
+    #register_box dl #regCheckBox {
+      width: 300px;
+      height: 40px;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+    #register_box dl .sInput {
+      width: 118px;
+      height: 28px;
+      padding: 5px;
+      padding-left: 18px;
+      display: block;
+      margin-right: 15px;
+      float: left;
+      border: 1px solid #989898;
+      outline: none;
+      font-size: 14px;
+      font-family: Airal;
+      font-weight: 900; }
+    #register_box dl #regCheckcode {
+      width: 120px;
+      height: 40px;
+      float: left;
+      font: italic bold 30px/40px arial;
+      text-align: center; }
+    #register_box dl #changeCode {
+      float: right;
+      color: #323232;
+      text-decoration: underline; }
+    #register_box dl #McheckBox {
+      width: 300px;
+      height: 40px;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+    #register_box dl #getMobileCheck {
+      border: none;
+      width: 141px;
+      height: 40px;
+      background: #838383;
+      color: white; }
+    #register_box dl #regClause {
+      width: 300px;
+      height: 20px;
+      font-size: 12px;
+      color: #323232; }
+      #register_box dl #regClause a {
+        color: #323232;
+        text-decoration: underline; }
+    #register_box dl #goReg {
+      width: 298px;
+      height: 38px;
+      border: 1px solid #323232;
+      background: black;
+      color: white;
+      margin-top: 10px;
+      font-size: 18px;
+      outline: none;
+      line-height: 38px;
+      transition: 0.5s;
+      line-height: 38px;
+      padding: 0; }
+    #register_box dl #goReg:after {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 28px;
+      vertical-align: middle;
+      background: url(../images/index/bgpic.png) no-repeat -10px -164px;
+      margin-left: 12px; }
+    #register_box dl #goReg:hover {
+      background: white;
+      color: black; }
+    #register_box dl #goReg:hover#goReg:after {
+      background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
+
+#search_box {
+  height: 40px;
+  top: -80px;
+  padding: 20px 0;
+  position: relative; }
+  #search_box #searchValue {
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative; }
+    #search_box #searchValue #searchInput {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-size: 24px;
+      font-family: 微软雅黑;
+      font-weight: 900;
+      line-height: 100%;
+      color: #989898; }
+    #search_box #searchValue #searchTxt {
+      position: absolute;
+      display: block;
+      height: 100%;
+      font-size: 24px;
+      font-family: 微软雅黑;
+      line-height: 40px;
+      color: #989898;
+      left: 18px; }
+  #search_box #searchBtnBox {
+    height: 50%;
+    position: absolute;
+    width: auto;
+    top: 25%;
+    right: 132px; }
+    #search_box #searchBtnBox button {
+      width: 32px;
+      height: 32px;
+      margin-top: 5px;
+      margin-left: 20px;
+      border: none;
+      border-radius: 50%;
+      outline: none; }
+    #search_box #searchBtnBox #searchbtn {
+      background: url(../images/index/bgpic.png) no-repeat -136px -161px; }
+    #search_box #searchBtnBox #closebtn {
+      background: url(../images/index/bgpic.png) no-repeat -168px -129px; }
+    #search_box #searchBtnBox #searchbtn:hover {
+      opacity: 0.7; }
+    #search_box #searchBtnBox #closebtn:hover {
+      opacity: 0.7; }
+
+nav {
+  width: 100%;
+  height: 50px;
+  background: #454545;
+  position: absolute;
+  z-index: 101; }
+  nav ul {
+    width: 805px;
+    height: 50px;
+    margin: 0 auto; }
+    nav ul li {
+      float: left;
+      width: 134px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px; }
+      nav ul li a {
+        display: block;
+        height: 50px;
+        color: white;
+        font-size: 20px; }
+  nav .categorybox {
+    width: 100%;
+    height: 262px;
+    position: absolute;
+    z-index: 999;
+    background: #fefefe;
+    display: none; }
+    nav .categorybox .divider1 {
+      width: 100%;
+      height: 0;
+      border-bottom: 1px solid #b6b6b6;
+      position: absolute;
+      top: 130px; }
+    nav .categorybox .divider2 {
+      width: 100%;
+      height: 0;
+      border-bottom: 1px solid #b6b6b6;
+      position: absolute;
+      top: 261px; }
+    nav .categorybox .inbox {
+      width: 1000px;
+      height: 100%;
+      margin: 0 auto; }
+      nav .categorybox .inbox div {
+        float: left;
+        width: 130px;
+        height: 130px;
+        position: relative;
+        margin: 0; }
+        nav .categorybox .inbox div a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+          nav .categorybox .inbox div a p {
+            width: 100%;
+            position: absolute;
+            bottom: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #333; }
+      nav .categorybox .inbox div:nth-child(6) {
+        margin-right: 100px; }
+
+nav .classify:hover {
+  text-decoration: underline; }
+
+footer {
+  width: 100%;
+  height: 140px;
+  background: black; }
+  footer #foot {
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative; }
+    footer #foot ul {
+      width: 100%;
+      height: 30px;
+      padding: 18px 0;
+      text-align: center; }
+      footer #foot ul li {
+        display: inline-block;
+        text-align: center;
+        margin: 0 10px;
+        height: 100%; }
+        footer #foot ul li a {
+          color: white;
+          font-size: 14px; }
+    footer #foot #footlogo {
+      width: 66px;
+      height: 50px;
+      margin: 0 auto;
+      background: url(../images/index/footlog.png) no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      margin-left: -33px; }
+      footer #foot #footlogo a {
+        width: 100%;
+        height: 100%;
+        display: block; }
+  footer p {
+    display: block;
+    width: 100%;
+    height: 17px;
+    margin: 12px 0;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-size: 12px; }
+    footer p a {
+      color: #fff;
+      width: 200 px;
+      height: 15px;
+      display: block; }

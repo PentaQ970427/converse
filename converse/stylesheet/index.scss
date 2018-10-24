@@ -1,165 +1,14 @@
-$width:100%;
-#stickHeader{
-    width:$width;
-    height:130px;
-}
-// header
-#headbox{
-    width:$width;
-    height:80px;
-    background:black;
-
-}
-header{
-    width:1111px;
-    height:80px;
-    margin:0 auto;
-    & a,span,p{
-        display:block;
-        color:white;
-        float:left;
-        height:100%;
-        font-size:12px;
-        margin:0 20px;
-        line-height:80px;
-        & div{
-            margin-top:25px;
-            width:30px;
-            height:30px;
-            border-radius:50%;
-            background-color:#454545;
-            text-align: center;
-            line-height:30px;
-            font-size:18px;
-        }}
-}
-#headLogo{
-    width:161px;height:19px;margin:30px 465px 0 0;
-    & img{width:100%;height:100%;}
-}
-#login_1{margin:0 6px 0 0;}
-#register{margin:0 0 0 6px;}
-#pdtsNum div{background-color:#930100;}
-header span div:hover{background:#b6b6b6;}
-header a div:hover{background:#b6b6b6;}
-#shoppingCar{margin-right:5px;}
-header .fonts:hover{text-decoration:underline;}
-// 下拉详细信息
-#pull_down{width:$width;height:auto;}
-#pull_down .outBox{width:$width;background:#fefefe;position: absolute;opacity:0;z-index:101;}
-//登陆信息
-#login_box{
-    height:398px;top:-398px;position: relative;
-    & ul{
-        width:1000px;
-        height:317px;
-        margin:40px auto;
-        & li{float:left}
-        // 去注册
-        & li:first-child{
-            width:209px;
-            height:100%;
-            border-right:1px solid #989898;
-            & p{
-                height:24px;line-height:100%;font-size:24px;margin-bottom: 20px;color:#323232;
-            }
-            & button{
-                width: 150px;height:40px;border:0;color:white;background:black;
-                font-size:18px;padding:0;line-height:40px;outline: none;border:1px solid black;transition:0.5s;
-                & span{
-                    display: inline-block;width: 15px;height:28px;vertical-align: middle;background: url(../images/index/bgpic.png) no-repeat -10px -164px;margin-left: 12px;
-                }
-            }
-            & button:hover{background:white;color:black;} & button:hover span{background:url(../images/index/bgpic.png) no-repeat -42px -164px;}
-        }
-        // 第三方登录
-        & li:nth-child(2){
-            width:360px;
-            height:100%;
-            padding-left:60px;
-            & p{height:24px;line-height: 100%;font-size:24px;color:#323232;margin-bottom:20px;}
-            & a{float: left;width:40px;height:40px;margin-right:11px;background:#454545;color:white;font-size: 36px;text-align:center;line-height: 45px;}
-        }
-        // 账号密码登陆
-        & li:nth-child(3){
-            width:309px;
-            height:100%;padding-left:60px;
-            border-left:1px solid #989898;
-            & p{height:24px;line-height:100%;font-size:24px;color:#323232;margin-bottom:20px;}
-            & input{outline:none;border:1px solid #989898;margin-bottom:20px;padding:5px;padding-left:18px;}
-            #username{width:275px;height:28px;}
-            #password{width:275px;height:28px;}
-            #checkcode{width:115px;height:28px;margin-bottom:12px;}
-            #checkbox{float:right;width:150px;margin-left:5px;height:40px;font:italic bold 30px/40px arial;text-align: center;}
-            #change{text-align:right;text-decoration:underline;font-size:14px;float:right;color: #323232;cursor:pointer;}
-            #clause{width:300px;height:38px;font-size: 12px;line-height:38px;color:#323232;
-                & a{color:#323232;text-decoration: underline;}}
-            #sure{width:298px;height:38px;border:1px solid #323232;background:black;color:white;font-size:18px;outline:none;line-height: 38px;transition:0.5s;margin-bottom:5px;
-                & span{
-                    display: inline-block;width: 15px;height:28px;vertical-align: middle;background: url(../images/index/bgpic.png) no-repeat -10px -164px;margin-left: 12px;
-                }}
-            #sure:hover{background:white;color:black;} #sure:hover span{background:url(../images/index/bgpic.png) no-repeat -42px -164px;}
-            #remember{display:inline-block;width:114px;height:22px;line-height: 22px;font-size:14px;text-align:left;
-                & div{float:left;height:14px;width:14px;border:1px solid #989898;}
-                & .checked{float: left;height:18px;width:18px;border:2px solid black;margin-right:5px;background:url(../images/index/check.png) no-repeat -3px -181px;}}
-            #forgetPwd{float: right;font-size:14px;text-decoration:underline;margin-right:9px;color:#000;}
-        }
-    }
-}
-#register_box{height:398px;top:-398px;position: relative;
-    & dl{width:1000px;height:317px;margin:40px auto;
-        & ul li{width:300px;height:95px;float:left;margin-right:50px;color:#323232;font-size: 14px;& b{color:red;}}
-        & ul li .lInput{width:275px;height: 28px;padding:5px;padding-left:18px;border:1px solid #989898;margin-top:10px;font-family:'Airal';font-weight: 900;outline: none; }
-        & ul li:nth-child(3){margin:0;}
-        #sexBox>div{float:left;width:120px;height:40px;margin-top:10px;line-height:40px;position: relative;padding-left:30px;cursor: pointer;& div{display:inline-block;position: absolute;top:12px;left: 0;vertical-align: middle;height:14px;width:14px;border:1px solid #989898;margin-right: 10px;}& .checked{width:18px;height:18px;border:2px solid #000;background:url(../images/index/check.png) no-repeat -3px -181px;position: absolute;top:9px;left: 0}}
-        #birthdayBox{margin-top:10px;& .selectBox{width:88px;height:38px;border:1px solid #989898;float:left;position:relative;margin-right:15px;& span{display:block;position:absolute;width:58px;height:38px;line-height:38px;text-align:center;padding-right:30px;font-size:14px;font-family:Airal;font-weight:900;}
-        & select{height:38px;width:88px;position:relative;z-index:2;border:none;outline: none;opacity:0;& option{font-size:14px;font-family:Airal;font-weight:900;}}}
-        .selectBox:after{content:"";display:block;width:30px;height:38px;position: absolute;top:0;right:0;border-left:1px solid #989898;background: url(../images/index/selectbg.png) no-repeat center;pointer-events: none;}}#regCheckBox{width:300px;height:40px;margin-top: 10px;margin-bottom:5px;}
-        & .sInput{width:118px;height:28px;padding:5px;padding-left:18px;display: block;margin-right:15px;float:left;border:1px solid #989898;outline:none;font-size:14px;font-family:Airal;font-weight:900;}
-        #regCheckcode{width:120px;height:40px;float: left;font:italic bold 30px/40px arial;text-align: center; }
-        #changeCode{float:right;color:#323232;text-decoration:underline;}
-        #McheckBox{width:300px;height:40px;margin-top:10px;margin-bottom:5px;}
-        #getMobileCheck{border:none;width: 141px;height:40px;background:#838383;color:white;}
-        #regClause{width:300px;height:20px;font-size:12px;color:#323232;& a{
-            color:#323232;text-decoration: underline;
-        }}
-        #goReg{width:298px;height:38px;border:1px solid #323232;background: black;color:white;margin-top:10px;font-size:18px;outline:none;line-height: 38px;transition:0.5s;line-height:38px;padding:0;}
-        #goReg:after{content: '';display:inline-block;width:15px;height:28px;vertical-align:middle;background:url(../images/index/bgpic.png) no-repeat -10px -164px;margin-left:12px;}
-        #goReg:hover{background:white;color:black;}
-        #goReg:hover#goReg:after{background:url(../images/index/bgpic.png) no-repeat -42px -164px;}
-    }}
-#search_box{height:40px;top:-80px;padding:20px 0;position: relative;
-    #searchValue{width:1000px;height:40px;margin:0 auto;position:relative;
-        #searchInput{width:100%;height:100%;border:none;outline: none;font-size:24px;font-family:微软雅黑;font-weight:900;line-height:100%;color:#989898;}
-        #searchTxt{position:absolute;display:block;height:100%;font-size:24px;font-family:微软雅黑;line-height:40px;color:#989898;left:18px;}}
-    #searchBtnBox{height:50%;position: absolute;width: auto;top:25%;right:132px;
-        & button{width:32px;height:32px;margin-top:5px;margin-left:20px;border:none;border-radius:50%;outline:none;}
-        #searchbtn{background: url(../images/index/bgpic.png) no-repeat -136px  -161px;}
-        #closebtn{background: url(../images/index/bgpic.png) no-repeat -168px -129px;}
-        #searchbtn:hover{opacity: 0.7;}
-        #closebtn:hover{opacity: 0.7;}}
-    }
-// 导航栏
-nav{width:$width;height:50px;background:#454545;position:absolute;z-index: 101;
-    & ul{
-        width:805px;height:50px;margin:0 auto;
-        & li{float:left;width:134px;height:50px;text-align: center;line-height:50px;
-        & a{
-            display:block;
-            height:50px;
-            color:white;
-            font-size:20px;
-        }}
-    }}
-nav .classify:hover{text-decoration:underline;}
-#bodyBox{width:100%;height:auto;
+#bodyBox{width:100%;height:auto;padding-bottom: 80px;
+    // 首页提醒
     #indexNotice{width:100%;height:24px;padding:15px 0;text-align:center;line-height:12px;
         & a{font-size:12px;color:#222;}}
+    // 轮播图
     #bannerBox{width:100%;height:493px;padding-bottom:36px;position: relative;
         #bannerPic{width:100%;height:493px;position:relative;
             & div:first-child{opacity:1;}
             & div{width:100%;height:493px;position:absolute;opacity:0;
-                & img{width:100%;}
+                & a{display:block;width:100%;height:100%;
+                    & img{width:100%;}}
             }
         }
         #bannerTitle{width:100%;height:36px;margin:8px 0;text-align: center;position: absolute;
@@ -169,5 +18,106 @@ nav .classify:hover{text-decoration:underline;}
             & .select{border-top:1px solid #000;
                 & a{color:#000}}
             }
+        #lastBanner{width:40px;height:100px;position:absolute;left:0;top:50%;margin-top:-50px;background-color:black;z-index:201;opacity:0.7;
+            & span{display: block;width:21px;height:40px;margin:30px 0 0 9px;
+            background:url(../images/index/l&r.png) no-repeat 0 -45px;}}
+        #nextBanner{width:40px;height:100px;position:absolute;right:0;top:50%;margin-top:-50px;background-color: black;z-index:201;opacity:0.7;
+            & span{display: block;width:21px;height:40px;margin:30px 0 0 10px;
+            background:url(../images/index/l&r.png) no-repeat;}}
+    }
+    // 热卖商品
+    #hotPdts{
+        width:1000px;height: 1087px;margin:0 auto;margin-top:80px;
+    }
+    .category{width:100%;height:270px;
+        & .category-hot{width:250px;height:230px;margin-top:40px;float:left;
+            & a{
+                display: block;text-align:center;width:100%;height:100%;
+                    & p{width:100%;height:30px;font-size:24px;line-height:30px;color:#333;}
+                    & img{width:200px;height:200px;margin:0 auto;}
+            }}}
+    .brand-menu-container{width:97%;height:20px;margin-top:20px;position:relative;padding:0 1.5%;& .brand-menu{width:39px;height:21px;position:absolute;top:0;margin-left:-20px;left:12%;background:url(../images/index/active.png)}}
+    .brand-menu-container:before{content: '';display:block;width:100%;border-top:1px solid #b6b6b6;position: relative;}
+    .hotbox{width:1000px;height:727px;position:absolute;opacity:0;display: none;margin-top:20px;
+        & button{width: 368px;height:46px;border:1px solid #000;position:absolute;bottom:0;left:50%;margin-left:-210px;font-size: 16px;font-weight:900;color:white;background:black;padding:0 25px}
+        & button:hover{color:black;background:white;}
+        & div{width:25%;float:left;height:300px;margin-bottom: 40px;box-sizing: border-box;
+            & a{display:block;width: 100%;height:100%;text-align: center;font-size:16px;font-weight:900;font-family:arial;color:#323232;
+                & p{height:55px;margin-bottom:5px;}
+                & img{width:165px;height:165px;margin:0 auto;margin-bottom:15px;margin-top:10px;}}}
+        & div:hover{border:1px solid #323232;margin-top:2px;margin-bottom:38px;}
+            }
+    .hotbox:before{content: '';display:block;width:100%;height:19px;border-bottom:1px dashed #989898;position: absolute;;top:300px;margin-bottom :20px;}
+    // 新品热荐
+    #newPdts{
+        width:1000px;height: 1373px;margin:0 auto;margin-top:80px;
+        #newbox{width:100%;height:1323px;margin-top: 20px;position:relative;
+            & div{width:25%;float:left;height:300px;margin-top: 20px;margin-bottom: 20px;box-sizing: border-box;
+                & a{display:block;width: 100%;height:100%;text-align: center;font-size:16px;font-weight:900;font-family:arial;color:#323232;
+                    & p{height:55px;margin-bottom:5px;}
+                    & img{width:165px;height:165px;margin:0 auto;margin-bottom:15px;margin-top:10px;}}}
+            & div:hover{border:1px solid #323232;margin-top:2px;margin-bottom:38px;}
+            & .dashed{width:1000px;position:absolute;margin:0;border-top:1px dashed #989898;height:0;}
+            }
+    }
+    .specialfeature{width:1000px;height:auto;margin:0 auto;margin-top:40px;
+        .specialfeature-title{width:100%;height:40px;background: #454545;overflow: hidden;line-height: 40px;
+            & img{width:19px;height:19px;margin:10px 11px 0 20px;display: inline-block;}
+            & span{font-size:19px;color:white;font-family:'微软雅黑';}
+        }
+        .specialbox{width:100%;height:552px;margin-top:20px;
+            .specialpdts{width:488px;float:left;
+                .a-img{display: block;width:100%;height:366px;border:1px solid #989898;}
+                .a-img:hover{opacity:0.8;}
+                .showmore{width:183px;height:48px;border:1px solid #000;font-size:18px;color: white;background:black;}
+                .showmore:hover{color:black;background: white;}
+            }
+        }
+        .a-txt{display: block;width:100%;height:auto;color:#000;margin-bottom:20px;
+            & h1{width:100%;height:24px;font-size:24px;margin:17px 0;line-height:24px;}
+            & p{font-size:14px;font-family:'微软雅黑';}
+        }
+        .a-txt:hover{color:#989898;}
+        .a-txt:hover h1{text-decoration: underline;}
+        .specialpdts2{width:320px;height:auto;float:left;margin-right:20px;
+            & .a-img2{display: block;width:320;height:240px;border:1px solid #989898;
+                & img{width:100%;}}
+            & .more{color:#454545;text-decoration: underline;font-size:17px;}
+            & .more:hover{color:#989898;}
+            }
     }
 }
+#sitemapbox{width:100%;height:auto;overflow: hidden;
+    #sitemap{width:1000px;height:610px;margin:75px auto 0;text-align: center;
+        & dl{width:240px;height:280px;float: left;text-align: center;
+            & dt{width:240px;height:20px;margin-bottom:20px;font-weight: bold;
+                & a{font-size:16px;}}
+            & dd{width:240px;height:20px;}
+            & .mgb20{margin-bottom:20px;}
+            & a{color:black;font-size:14px;}
+            & a:hover{color:#989898;}
+        }
+        }
+    }
+    .category-title{
+        width:1000px;height:30px;margin:20px 0;position: relative;
+        & h1{font-size:30px;width:120px;height:30px;padding:0 40px;position: absolute;left:50%;margin-left:-100px;line-height:100%;background:#fff;}
+    }
+    .category-title:before{content:'';display: block;width:100%;border-top:1px solid #989898;position:absolute;top:50%;z-index:-1;}
+#focus{width:100%;height:359px;background:#454545;overflow:hidden;
+    & h1{font-size:30px;margin:78px auto 35px;color:white;height:30px;line-height:30px;text-align: center;}
+    & p{color:white;text-align: center;}
+    #share-area{width:525px;height:auto;margin:37px auto 0;padding-bottom:80px;
+        & a{display: block;width:75px;height:75px;float:left;margin:0 15px;background:url(../images/index/share.png) no-repeat;}
+        #weibo{background-position:-75px 0;}
+        #weibo:hover{background-position:0 0 ;}
+        #wechat{background-position:-75px -75px;}
+        #wechat:hover{background-position:0 -75px;}
+        #tencentweibo{background-position: -75px -150px;}
+        #tencentweibo:hover{background-position: 0 -150px;}
+        #renren{background-position: -75px -225px;}
+        #renren:hover{background-position:0 -225px;}
+        #douban{background-position:-75px -300px;}
+        #douban:hover{background-position:0 -300px;}
+        }
+    }

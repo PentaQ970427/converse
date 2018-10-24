@@ -1,491 +1,8 @@
 @charset "UTF-8";
-#stickHeader {
-  width: 100%;
-  height: 130px; }
-
-#headbox {
-  width: 100%;
-  height: 80px;
-  background: black; }
-
-header {
-  width: 1111px;
-  height: 80px;
-  margin: 0 auto; }
-  header a, header span, header p {
-    display: block;
-    color: white;
-    float: left;
-    height: 100%;
-    font-size: 12px;
-    margin: 0 20px;
-    line-height: 80px; }
-    header a div, header span div, header p div {
-      margin-top: 25px;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-      background-color: #454545;
-      text-align: center;
-      line-height: 30px;
-      font-size: 18px; }
-
-#headLogo {
-  width: 161px;
-  height: 19px;
-  margin: 30px 465px 0 0; }
-  #headLogo img {
-    width: 100%;
-    height: 100%; }
-
-#login_1 {
-  margin: 0 6px 0 0; }
-
-#register {
-  margin: 0 0 0 6px; }
-
-#pdtsNum div {
-  background-color: #930100; }
-
-header span div:hover {
-  background: #b6b6b6; }
-
-header a div:hover {
-  background: #b6b6b6; }
-
-#shoppingCar {
-  margin-right: 5px; }
-
-header .fonts:hover {
-  text-decoration: underline; }
-
-#pull_down {
-  width: 100%;
-  height: auto; }
-
-#pull_down .outBox {
-  width: 100%;
-  background: #fefefe;
-  position: absolute;
-  opacity: 0;
-  z-index: 101; }
-
-#login_box {
-  height: 398px;
-  top: -398px;
-  position: relative; }
-  #login_box ul {
-    width: 1000px;
-    height: 317px;
-    margin: 40px auto; }
-    #login_box ul li {
-      float: left; }
-    #login_box ul li:first-child {
-      width: 209px;
-      height: 100%;
-      border-right: 1px solid #989898; }
-      #login_box ul li:first-child p {
-        height: 24px;
-        line-height: 100%;
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: #323232; }
-      #login_box ul li:first-child button {
-        width: 150px;
-        height: 40px;
-        border: 0;
-        color: white;
-        background: black;
-        font-size: 18px;
-        padding: 0;
-        line-height: 40px;
-        outline: none;
-        border: 1px solid black;
-        transition: 0.5s; }
-        #login_box ul li:first-child button span {
-          display: inline-block;
-          width: 15px;
-          height: 28px;
-          vertical-align: middle;
-          background: url(../images/index/bgpic.png) no-repeat -10px -164px;
-          margin-left: 12px; }
-      #login_box ul li:first-child button:hover {
-        background: white;
-        color: black; }
-      #login_box ul li:first-child button:hover span {
-        background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
-    #login_box ul li:nth-child(2) {
-      width: 360px;
-      height: 100%;
-      padding-left: 60px; }
-      #login_box ul li:nth-child(2) p {
-        height: 24px;
-        line-height: 100%;
-        font-size: 24px;
-        color: #323232;
-        margin-bottom: 20px; }
-      #login_box ul li:nth-child(2) a {
-        float: left;
-        width: 40px;
-        height: 40px;
-        margin-right: 11px;
-        background: #454545;
-        color: white;
-        font-size: 36px;
-        text-align: center;
-        line-height: 45px; }
-    #login_box ul li:nth-child(3) {
-      width: 309px;
-      height: 100%;
-      padding-left: 60px;
-      border-left: 1px solid #989898; }
-      #login_box ul li:nth-child(3) p {
-        height: 24px;
-        line-height: 100%;
-        font-size: 24px;
-        color: #323232;
-        margin-bottom: 20px; }
-      #login_box ul li:nth-child(3) input {
-        outline: none;
-        border: 1px solid #989898;
-        margin-bottom: 20px;
-        padding: 5px;
-        padding-left: 18px; }
-      #login_box ul li:nth-child(3) #username {
-        width: 275px;
-        height: 28px; }
-      #login_box ul li:nth-child(3) #password {
-        width: 275px;
-        height: 28px; }
-      #login_box ul li:nth-child(3) #checkcode {
-        width: 115px;
-        height: 28px;
-        margin-bottom: 12px; }
-      #login_box ul li:nth-child(3) #checkbox {
-        float: right;
-        width: 150px;
-        margin-left: 5px;
-        height: 40px;
-        font: italic bold 30px/40px arial;
-        text-align: center; }
-      #login_box ul li:nth-child(3) #change {
-        text-align: right;
-        text-decoration: underline;
-        font-size: 14px;
-        float: right;
-        color: #323232;
-        cursor: pointer; }
-      #login_box ul li:nth-child(3) #clause {
-        width: 300px;
-        height: 38px;
-        font-size: 12px;
-        line-height: 38px;
-        color: #323232; }
-        #login_box ul li:nth-child(3) #clause a {
-          color: #323232;
-          text-decoration: underline; }
-      #login_box ul li:nth-child(3) #sure {
-        width: 298px;
-        height: 38px;
-        border: 1px solid #323232;
-        background: black;
-        color: white;
-        font-size: 18px;
-        outline: none;
-        line-height: 38px;
-        transition: 0.5s;
-        margin-bottom: 5px; }
-        #login_box ul li:nth-child(3) #sure span {
-          display: inline-block;
-          width: 15px;
-          height: 28px;
-          vertical-align: middle;
-          background: url(../images/index/bgpic.png) no-repeat -10px -164px;
-          margin-left: 12px; }
-      #login_box ul li:nth-child(3) #sure:hover {
-        background: white;
-        color: black; }
-      #login_box ul li:nth-child(3) #sure:hover span {
-        background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
-      #login_box ul li:nth-child(3) #remember {
-        display: inline-block;
-        width: 114px;
-        height: 22px;
-        line-height: 22px;
-        font-size: 14px;
-        text-align: left; }
-        #login_box ul li:nth-child(3) #remember div {
-          float: left;
-          height: 14px;
-          width: 14px;
-          border: 1px solid #989898; }
-        #login_box ul li:nth-child(3) #remember .checked {
-          float: left;
-          height: 18px;
-          width: 18px;
-          border: 2px solid black;
-          margin-right: 5px;
-          background: url(../images/index/check.png) no-repeat -3px -181px; }
-      #login_box ul li:nth-child(3) #forgetPwd {
-        float: right;
-        font-size: 14px;
-        text-decoration: underline;
-        margin-right: 9px;
-        color: #000; }
-
-#register_box {
-  height: 398px;
-  top: -398px;
-  position: relative; }
-  #register_box dl {
-    width: 1000px;
-    height: 317px;
-    margin: 40px auto; }
-    #register_box dl ul li {
-      width: 300px;
-      height: 95px;
-      float: left;
-      margin-right: 50px;
-      color: #323232;
-      font-size: 14px; }
-      #register_box dl ul li b {
-        color: red; }
-    #register_box dl ul li .lInput {
-      width: 275px;
-      height: 28px;
-      padding: 5px;
-      padding-left: 18px;
-      border: 1px solid #989898;
-      margin-top: 10px;
-      font-family: 'Airal';
-      font-weight: 900;
-      outline: none; }
-    #register_box dl ul li:nth-child(3) {
-      margin: 0; }
-    #register_box dl #sexBox > div {
-      float: left;
-      width: 120px;
-      height: 40px;
-      margin-top: 10px;
-      line-height: 40px;
-      position: relative;
-      padding-left: 30px;
-      cursor: pointer; }
-      #register_box dl #sexBox > div div {
-        display: inline-block;
-        position: absolute;
-        top: 12px;
-        left: 0;
-        vertical-align: middle;
-        height: 14px;
-        width: 14px;
-        border: 1px solid #989898;
-        margin-right: 10px; }
-      #register_box dl #sexBox > div .checked {
-        width: 18px;
-        height: 18px;
-        border: 2px solid #000;
-        background: url(../images/index/check.png) no-repeat -3px -181px;
-        position: absolute;
-        top: 9px;
-        left: 0; }
-    #register_box dl #birthdayBox {
-      margin-top: 10px; }
-      #register_box dl #birthdayBox .selectBox {
-        width: 88px;
-        height: 38px;
-        border: 1px solid #989898;
-        float: left;
-        position: relative;
-        margin-right: 15px; }
-        #register_box dl #birthdayBox .selectBox span {
-          display: block;
-          position: absolute;
-          width: 58px;
-          height: 38px;
-          line-height: 38px;
-          text-align: center;
-          padding-right: 30px;
-          font-size: 14px;
-          font-family: Airal;
-          font-weight: 900; }
-        #register_box dl #birthdayBox .selectBox select {
-          height: 38px;
-          width: 88px;
-          position: relative;
-          z-index: 2;
-          border: none;
-          outline: none;
-          opacity: 0; }
-          #register_box dl #birthdayBox .selectBox select option {
-            font-size: 14px;
-            font-family: Airal;
-            font-weight: 900; }
-      #register_box dl #birthdayBox .selectBox:after {
-        content: "";
-        display: block;
-        width: 30px;
-        height: 38px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-left: 1px solid #989898;
-        background: url(../images/index/selectbg.png) no-repeat center;
-        pointer-events: none; }
-    #register_box dl #regCheckBox {
-      width: 300px;
-      height: 40px;
-      margin-top: 10px;
-      margin-bottom: 5px; }
-    #register_box dl .sInput {
-      width: 118px;
-      height: 28px;
-      padding: 5px;
-      padding-left: 18px;
-      display: block;
-      margin-right: 15px;
-      float: left;
-      border: 1px solid #989898;
-      outline: none;
-      font-size: 14px;
-      font-family: Airal;
-      font-weight: 900; }
-    #register_box dl #regCheckcode {
-      width: 120px;
-      height: 40px;
-      float: left;
-      font: italic bold 30px/40px arial;
-      text-align: center; }
-    #register_box dl #changeCode {
-      float: right;
-      color: #323232;
-      text-decoration: underline; }
-    #register_box dl #McheckBox {
-      width: 300px;
-      height: 40px;
-      margin-top: 10px;
-      margin-bottom: 5px; }
-    #register_box dl #getMobileCheck {
-      border: none;
-      width: 141px;
-      height: 40px;
-      background: #838383;
-      color: white; }
-    #register_box dl #regClause {
-      width: 300px;
-      height: 20px;
-      font-size: 12px;
-      color: #323232; }
-      #register_box dl #regClause a {
-        color: #323232;
-        text-decoration: underline; }
-    #register_box dl #goReg {
-      width: 298px;
-      height: 38px;
-      border: 1px solid #323232;
-      background: black;
-      color: white;
-      margin-top: 10px;
-      font-size: 18px;
-      outline: none;
-      line-height: 38px;
-      transition: 0.5s;
-      line-height: 38px;
-      padding: 0; }
-    #register_box dl #goReg:after {
-      content: '';
-      display: inline-block;
-      width: 15px;
-      height: 28px;
-      vertical-align: middle;
-      background: url(../images/index/bgpic.png) no-repeat -10px -164px;
-      margin-left: 12px; }
-    #register_box dl #goReg:hover {
-      background: white;
-      color: black; }
-    #register_box dl #goReg:hover#goReg:after {
-      background: url(../images/index/bgpic.png) no-repeat -42px -164px; }
-
-#search_box {
-  height: 40px;
-  top: -80px;
-  padding: 20px 0;
-  position: relative; }
-  #search_box #searchValue {
-    width: 1000px;
-    height: 40px;
-    margin: 0 auto;
-    position: relative; }
-    #search_box #searchValue #searchInput {
-      width: 100%;
-      height: 100%;
-      border: none;
-      outline: none;
-      font-size: 24px;
-      font-family: 微软雅黑;
-      font-weight: 900;
-      line-height: 100%;
-      color: #989898; }
-    #search_box #searchValue #searchTxt {
-      position: absolute;
-      display: block;
-      height: 100%;
-      font-size: 24px;
-      font-family: 微软雅黑;
-      line-height: 40px;
-      color: #989898;
-      left: 18px; }
-  #search_box #searchBtnBox {
-    height: 50%;
-    position: absolute;
-    width: auto;
-    top: 25%;
-    right: 132px; }
-    #search_box #searchBtnBox button {
-      width: 32px;
-      height: 32px;
-      margin-top: 5px;
-      margin-left: 20px;
-      border: none;
-      border-radius: 50%;
-      outline: none; }
-    #search_box #searchBtnBox #searchbtn {
-      background: url(../images/index/bgpic.png) no-repeat -136px -161px; }
-    #search_box #searchBtnBox #closebtn {
-      background: url(../images/index/bgpic.png) no-repeat -168px -129px; }
-    #search_box #searchBtnBox #searchbtn:hover {
-      opacity: 0.7; }
-    #search_box #searchBtnBox #closebtn:hover {
-      opacity: 0.7; }
-
-nav {
-  width: 100%;
-  height: 50px;
-  background: #454545;
-  position: absolute;
-  z-index: 101; }
-  nav ul {
-    width: 805px;
-    height: 50px;
-    margin: 0 auto; }
-    nav ul li {
-      float: left;
-      width: 134px;
-      height: 50px;
-      text-align: center;
-      line-height: 50px; }
-      nav ul li a {
-        display: block;
-        height: 50px;
-        color: white;
-        font-size: 20px; }
-
-nav .classify:hover {
-  text-decoration: underline; }
-
 #bodyBox {
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding-bottom: 80px; }
   #bodyBox #indexNotice {
     width: 100%;
     height: 24px;
@@ -511,8 +28,12 @@ nav .classify:hover {
         height: 493px;
         position: absolute;
         opacity: 0; }
-        #bodyBox #bannerBox #bannerPic div img {
-          width: 100%; }
+        #bodyBox #bannerBox #bannerPic div a {
+          display: block;
+          width: 100%;
+          height: 100%; }
+          #bodyBox #bannerBox #bannerPic div a img {
+            width: 100%; }
     #bodyBox #bannerBox #bannerTitle {
       width: 100%;
       height: 36px;
@@ -534,3 +55,374 @@ nav .classify:hover {
         border-top: 1px solid #000; }
         #bodyBox #bannerBox #bannerTitle .select a {
           color: #000; }
+    #bodyBox #bannerBox #lastBanner {
+      width: 40px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -50px;
+      background-color: black;
+      z-index: 201;
+      opacity: 0.7; }
+      #bodyBox #bannerBox #lastBanner span {
+        display: block;
+        width: 21px;
+        height: 40px;
+        margin: 30px 0 0 9px;
+        background: url(../images/index/l&r.png) no-repeat 0 -45px; }
+    #bodyBox #bannerBox #nextBanner {
+      width: 40px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -50px;
+      background-color: black;
+      z-index: 201;
+      opacity: 0.7; }
+      #bodyBox #bannerBox #nextBanner span {
+        display: block;
+        width: 21px;
+        height: 40px;
+        margin: 30px 0 0 10px;
+        background: url(../images/index/l&r.png) no-repeat; }
+  #bodyBox #hotPdts {
+    width: 1000px;
+    height: 1087px;
+    margin: 0 auto;
+    margin-top: 80px; }
+  #bodyBox .category {
+    width: 100%;
+    height: 270px; }
+    #bodyBox .category .category-hot {
+      width: 250px;
+      height: 230px;
+      margin-top: 40px;
+      float: left; }
+      #bodyBox .category .category-hot a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100%; }
+        #bodyBox .category .category-hot a p {
+          width: 100%;
+          height: 30px;
+          font-size: 24px;
+          line-height: 30px;
+          color: #333; }
+        #bodyBox .category .category-hot a img {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto; }
+  #bodyBox .brand-menu-container {
+    width: 97%;
+    height: 20px;
+    margin-top: 20px;
+    position: relative;
+    padding: 0 1.5%; }
+    #bodyBox .brand-menu-container .brand-menu {
+      width: 39px;
+      height: 21px;
+      position: absolute;
+      top: 0;
+      margin-left: -20px;
+      left: 12%;
+      background: url(../images/index/active.png); }
+  #bodyBox .brand-menu-container:before {
+    content: '';
+    display: block;
+    width: 100%;
+    border-top: 1px solid #b6b6b6;
+    position: relative; }
+  #bodyBox .hotbox {
+    width: 1000px;
+    height: 727px;
+    position: absolute;
+    opacity: 0;
+    display: none;
+    margin-top: 20px; }
+    #bodyBox .hotbox button {
+      width: 368px;
+      height: 46px;
+      border: 1px solid #000;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -210px;
+      font-size: 16px;
+      font-weight: 900;
+      color: white;
+      background: black;
+      padding: 0 25px; }
+    #bodyBox .hotbox button:hover {
+      color: black;
+      background: white; }
+    #bodyBox .hotbox div {
+      width: 25%;
+      float: left;
+      height: 300px;
+      margin-bottom: 40px;
+      box-sizing: border-box; }
+      #bodyBox .hotbox div a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 900;
+        font-family: arial;
+        color: #323232; }
+        #bodyBox .hotbox div a p {
+          height: 55px;
+          margin-bottom: 5px; }
+        #bodyBox .hotbox div a img {
+          width: 165px;
+          height: 165px;
+          margin: 0 auto;
+          margin-bottom: 15px;
+          margin-top: 10px; }
+    #bodyBox .hotbox div:hover {
+      border: 1px solid #323232;
+      margin-top: 2px;
+      margin-bottom: 38px; }
+  #bodyBox .hotbox:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 19px;
+    border-bottom: 1px dashed #989898;
+    position: absolute;
+    top: 300px;
+    margin-bottom: 20px; }
+  #bodyBox #newPdts {
+    width: 1000px;
+    height: 1373px;
+    margin: 0 auto;
+    margin-top: 80px; }
+    #bodyBox #newPdts #newbox {
+      width: 100%;
+      height: 1323px;
+      margin-top: 20px;
+      position: relative; }
+      #bodyBox #newPdts #newbox div {
+        width: 25%;
+        float: left;
+        height: 300px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box; }
+        #bodyBox #newPdts #newbox div a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 900;
+          font-family: arial;
+          color: #323232; }
+          #bodyBox #newPdts #newbox div a p {
+            height: 55px;
+            margin-bottom: 5px; }
+          #bodyBox #newPdts #newbox div a img {
+            width: 165px;
+            height: 165px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            margin-top: 10px; }
+      #bodyBox #newPdts #newbox div:hover {
+        border: 1px solid #323232;
+        margin-top: 2px;
+        margin-bottom: 38px; }
+      #bodyBox #newPdts #newbox .dashed {
+        width: 1000px;
+        position: absolute;
+        margin: 0;
+        border-top: 1px dashed #989898;
+        height: 0; }
+  #bodyBox .specialfeature {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px; }
+    #bodyBox .specialfeature .specialfeature-title {
+      width: 100%;
+      height: 40px;
+      background: #454545;
+      overflow: hidden;
+      line-height: 40px; }
+      #bodyBox .specialfeature .specialfeature-title img {
+        width: 19px;
+        height: 19px;
+        margin: 10px 11px 0 20px;
+        display: inline-block; }
+      #bodyBox .specialfeature .specialfeature-title span {
+        font-size: 19px;
+        color: white;
+        font-family: '微软雅黑'; }
+    #bodyBox .specialfeature .specialbox {
+      width: 100%;
+      height: 552px;
+      margin-top: 20px; }
+      #bodyBox .specialfeature .specialbox .specialpdts {
+        width: 488px;
+        float: left; }
+        #bodyBox .specialfeature .specialbox .specialpdts .a-img {
+          display: block;
+          width: 100%;
+          height: 366px;
+          border: 1px solid #989898; }
+        #bodyBox .specialfeature .specialbox .specialpdts .a-img:hover {
+          opacity: 0.8; }
+        #bodyBox .specialfeature .specialbox .specialpdts .showmore {
+          width: 183px;
+          height: 48px;
+          border: 1px solid #000;
+          font-size: 18px;
+          color: white;
+          background: black; }
+        #bodyBox .specialfeature .specialbox .specialpdts .showmore:hover {
+          color: black;
+          background: white; }
+    #bodyBox .specialfeature .a-txt {
+      display: block;
+      width: 100%;
+      height: auto;
+      color: #000;
+      margin-bottom: 20px; }
+      #bodyBox .specialfeature .a-txt h1 {
+        width: 100%;
+        height: 24px;
+        font-size: 24px;
+        margin: 17px 0;
+        line-height: 24px; }
+      #bodyBox .specialfeature .a-txt p {
+        font-size: 14px;
+        font-family: '微软雅黑'; }
+    #bodyBox .specialfeature .a-txt:hover {
+      color: #989898; }
+    #bodyBox .specialfeature .a-txt:hover h1 {
+      text-decoration: underline; }
+    #bodyBox .specialfeature .specialpdts2 {
+      width: 320px;
+      height: auto;
+      float: left;
+      margin-right: 20px; }
+      #bodyBox .specialfeature .specialpdts2 .a-img2 {
+        display: block;
+        width: 320;
+        height: 240px;
+        border: 1px solid #989898; }
+        #bodyBox .specialfeature .specialpdts2 .a-img2 img {
+          width: 100%; }
+      #bodyBox .specialfeature .specialpdts2 .more {
+        color: #454545;
+        text-decoration: underline;
+        font-size: 17px; }
+      #bodyBox .specialfeature .specialpdts2 .more:hover {
+        color: #989898; }
+
+#sitemapbox {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  #sitemapbox #sitemap {
+    width: 1000px;
+    height: 610px;
+    margin: 75px auto 0;
+    text-align: center; }
+    #sitemapbox #sitemap dl {
+      width: 240px;
+      height: 280px;
+      float: left;
+      text-align: center; }
+      #sitemapbox #sitemap dl dt {
+        width: 240px;
+        height: 20px;
+        margin-bottom: 20px;
+        font-weight: bold; }
+        #sitemapbox #sitemap dl dt a {
+          font-size: 16px; }
+      #sitemapbox #sitemap dl dd {
+        width: 240px;
+        height: 20px; }
+      #sitemapbox #sitemap dl .mgb20 {
+        margin-bottom: 20px; }
+      #sitemapbox #sitemap dl a {
+        color: black;
+        font-size: 14px; }
+      #sitemapbox #sitemap dl a:hover {
+        color: #989898; }
+
+.category-title {
+  width: 1000px;
+  height: 30px;
+  margin: 20px 0;
+  position: relative; }
+  .category-title h1 {
+    font-size: 30px;
+    width: 120px;
+    height: 30px;
+    padding: 0 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    line-height: 100%;
+    background: #fff; }
+
+.category-title:before {
+  content: '';
+  display: block;
+  width: 100%;
+  border-top: 1px solid #989898;
+  position: absolute;
+  top: 50%;
+  z-index: -1; }
+
+#focus {
+  width: 100%;
+  height: 359px;
+  background: #454545;
+  overflow: hidden; }
+  #focus h1 {
+    font-size: 30px;
+    margin: 78px auto 35px;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    text-align: center; }
+  #focus p {
+    color: white;
+    text-align: center; }
+  #focus #share-area {
+    width: 525px;
+    height: auto;
+    margin: 37px auto 0;
+    padding-bottom: 80px; }
+    #focus #share-area a {
+      display: block;
+      width: 75px;
+      height: 75px;
+      float: left;
+      margin: 0 15px;
+      background: url(../images/index/share.png) no-repeat; }
+    #focus #share-area #weibo {
+      background-position: -75px 0; }
+    #focus #share-area #weibo:hover {
+      background-position: 0 0; }
+    #focus #share-area #wechat {
+      background-position: -75px -75px; }
+    #focus #share-area #wechat:hover {
+      background-position: 0 -75px; }
+    #focus #share-area #tencentweibo {
+      background-position: -75px -150px; }
+    #focus #share-area #tencentweibo:hover {
+      background-position: 0 -150px; }
+    #focus #share-area #renren {
+      background-position: -75px -225px; }
+    #focus #share-area #renren:hover {
+      background-position: 0 -225px; }
+    #focus #share-area #douban {
+      background-position: -75px -300px; }
+    #focus #share-area #douban:hover {
+      background-position: 0 -300px; }

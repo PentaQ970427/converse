@@ -1,8 +1,8 @@
 var gulp = require("gulp");
 
-//1、任务 拷贝 index.html
-gulp.task("copy-index", function(){
-	return gulp.src("index.html")
+//拷贝 html
+gulp.task("copy-html", function(){
+	return gulp.src("*.html")
 	.pipe(gulp.dest("dist"))
 	.pipe(connect.reload());
 })
@@ -14,15 +14,6 @@ gulp.task('copy-icon',function(){
 })
 //2、拷贝图片
 gulp.task("images", function(){
-	// return gulp.src("img/*.jpg").pipe(gulp.dest("dist/images"));
-
-	//拷贝jpg和png图片
-	 // return gulp.src("img/*.{jpg,png}").pipe(gulp.dest("dist/images"));
-
-	//拷贝文件夹内的图片
-	// return gulp.src("img/*/*").pipe(gulp.dest("dist/images"));
-
-	//拷贝文件和目录下的图片
 	return gulp.src("img/**/*")
 	.pipe(gulp.dest("dist/images"))
 	.pipe(connect.reload());
@@ -37,10 +28,16 @@ gulp.task('data', function(){
 
 //4、一次性执行多个任务
 
-gulp.task("build", ["copy-index", "images", "data","copy-icon",'scripts'], function(){
+gulp.task("build", ["copy-html", "images", "data","copy-icon",'scripts','sass-goods','sass-headfoot','sass-goodsmsg','copy-php','sass-shopcart'], function(){
 	console.log("任务执行完毕");
 })
 
+// copy php文件
+gulp.task('copy-php',function(){
+    return gulp.src('*.php')
+    .pipe(gulp.dest('dist'))
+    .pipe(connect.reload());
+})
 
 var concat = require("gulp-concat");
 var uglify = require("gulp-uglify");
@@ -59,12 +56,17 @@ gulp.task("watch", function(){
 		第一个参数，监听文件的路径
 		第二个参数，执行的任务
 	*/
-	gulp.watch("index.html", ["copy-index"]);
+	gulp.watch("*.html", ["copy-html"]);
 	gulp.watch("img/**/*", ["images"]);
 	gulp.watch(['json/*'], ["data"]);
 	gulp.watch("stylesheet/index.scss", ['sass']);
     gulp.watch('iconfont/*',['copy-icon']);
 	gulp.watch('js/*.js', ["scripts"]);
+    gulp.watch('stylesheet/goods.scss',['sass-goods']);
+    gulp.watch('stylesheet/heads.scss',['sass-headfoot']);
+    gulp.watch('stylesheet/goodsmsg.scss',['sass-goodsmsg']);
+    gulp.watch('*.php',['copy-php']);
+    gulp.watch('stylesheet/shopcart.scss',['sass-shopcart']);
 })
 
 /*
@@ -87,7 +89,46 @@ gulp.task("sass", function(){
 	.pipe(gulp.dest("dist/css"))
 	.pipe(connect.reload());
 })
-
+// copy 购物车css
+gulp.task("sass-shopcart", function(){
+	return gulp.src("stylesheet/shopcart.scss")
+	.pipe(sass())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("shopcart.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+// copy 商品列表页css
+gulp.task("sass-goods", function(){
+	return gulp.src("stylesheet/goods.scss")
+	.pipe(sass())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("goods.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+// copy headfoot css
+gulp.task("sass-headfoot", function(){
+	return gulp.src("stylesheet/headfoot.scss")
+	.pipe(sass())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("headfoot.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
+// copy 商品详情页 css
+gulp.task("sass-goodsmsg", function(){
+	return gulp.src("stylesheet/goodsmsg.scss")
+	.pipe(sass())
+	.pipe(gulp.dest("dist/css"))
+	.pipe(minifyCSS())
+	.pipe(rename("goodsmsg.min.css"))
+	.pipe(gulp.dest("dist/css"))
+	.pipe(connect.reload());
+})
 var connect = require("gulp-connect");
 
 gulp.task("server", function(){

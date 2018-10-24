@@ -1,0 +1,143 @@
+.pagecontent {
+  width: 100%;
+  height: auto;
+  overflow: hidden; }
+  .pagecontent .category-title {
+    width: 1000px;
+    height: 30px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative; }
+    .pagecontent .category-title h1 {
+      height: 30px;
+      width: 320px;
+      display: inline-block;
+      padding: 0 40px;
+      font-size: 30px;
+      line-height: 100%;
+      background: #fff; }
+  .pagecontent .category-title:before {
+    content: '';
+    display: block;
+    width: 97%;
+    border-top: 1px solid #b6b6b6;
+    position: absolute;
+    top: 50%;
+    margin: 0 1.5%;
+    z-index: -1; }
+  .pagecontent .pdtlist {
+    width: 1000px;
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden; }
+    .pagecontent .pdtlist .pdtfilter {
+      width: 222px;
+      height: 317px;
+      margin-right: 28px;
+      float: left; }
+      .pagecontent .pdtlist .pdtfilter .filter-title {
+        width: 180px;
+        height: 67px;
+        padding: 12px 20px 0;
+        border: 1px solid #b6b6b6;
+        font-size: 18px;
+        color: #323232;
+        margin-bottom: 40px; }
+      .pagecontent .pdtlist .pdtfilter .filter-title:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0;
+        border-top: 1px solid #b6b6b6;
+        margin-top: 12px; }
+      .pagecontent .pdtlist .pdtfilter .conditions {
+        width: 222px;
+        height: 147px;
+        margin-top: 10px; }
+        .pagecontent .pdtlist .pdtfilter .conditions dl {
+          width: 222px;
+          height: 25px;
+          padding: 18px 0 5px;
+          overflow: hidden;
+          border-top: 1px solid #b6b6b6; }
+          .pagecontent .pdtlist .pdtfilter .conditions dl dt {
+            height: 18px;
+            margin-bottom: 18px;
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: bold;
+            background: url(../images/goodslist/plus.png) no-repeat right center; }
+          .pagecontent .pdtlist .pdtfilter .conditions dl dd {
+            height: 25px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            font-weight: bold; }
+          .pagecontent .pdtlist .pdtfilter .conditions dl dd:before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 1px solid #b6b6b6;
+            margin: 5px 5px 0 2px; }
+        .pagecontent .pdtlist .pdtfilter .conditions .unfold {
+          width: 222px;
+          height: auto;
+          overflow: visible; }
+          .pagecontent .pdtlist .pdtfilter .conditions .unfold dt {
+            background: url(../images/goodslist/minus.png) no-repeat right center; }
+    .pagecontent .pdtlist .allpdts {
+      width: 750px;
+      height: auto;
+      float: left; }
+      .pagecontent .pdtlist .allpdts .sorting {
+        height: 40px;
+        width: 100%; }
+        .pagecontent .pdtlist .allpdts .sorting p {
+          height: 40px;
+          line-height: 40px;
+          margin: 0 29px;
+          font-size: 14px;
+          color: #323232;
+          display: inline-block; }
+        .pagecontent .pdtlist .allpdts .sorting a {
+          display: inline-block;
+          padding: 3px 15px;
+          color: #323232;
+          border: 1px solid #989898;
+          font-size: 14px; }
+        .pagecontent .pdtlist .allpdts .sorting .pitch {
+          color: #fff;
+          background: #000; }
+      .pagecontent .pdtlist .allpdts .shots {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 250px;
+        height: 300px;
+        position: relative; }
+        .pagecontent .pdtlist .allpdts .shots a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          box-sizing: border-box;
+          position: absolute; }
+          .pagecontent .pdtlist .allpdts .shots a img {
+            height: 165px;
+            width: 165px;
+            display: inline-block;
+            margin-bottom: 15px; }
+          .pagecontent .pdtlist .allpdts .shots a p {
+            font-size: 14px;
+            color: #323232;
+            width: 100%;
+            height: 55px;
+            margin-bottom: 5px; }
+          .pagecontent .pdtlist .allpdts .shots a span {
+            display: block;
+            width: 100%;
+            height: 18px;
+            font-size: 14px;
+            color: #323232;
+            font-weight: bold; }
+      .pagecontent .pdtlist .allpdts .shots:hover {
+        border: 1px solid #000; }

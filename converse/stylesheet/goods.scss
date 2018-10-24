@@ -1,0 +1,38 @@
+.pagecontent{width:100%;height:auto;overflow: hidden;
+    .category-title{width:1000px;height:30px;margin: 40px auto;text-align: center;position: relative;
+        & h1{height:30px;width: 320px;display: inline-block;padding:0 40px;font-size:30px;line-height:100%;background: #fff;}
+    }
+    .category-title:before{content:'';display:block;width:97%;border-top:1px solid #b6b6b6;position:absolute;top:50%;margin:0 1.5%;z-index: -1;}
+    .pdtlist{width:1000px;height: auto;margin:20px auto 0;overflow: hidden;
+        .pdtfilter{width:222px;height:317px;margin-right:28px;float:left;
+            .filter-title{width:180px;height: 67px;padding:12px 20px 0;border:1px solid #b6b6b6;font-size:18px;color:#323232;margin-bottom:40px;}
+            .filter-title:after{content: '';display: block;width:100%;height:0;border-top: 1px solid #b6b6b6;margin-top:12px;}
+            .conditions{width:222px;height:147px;margin-top:10px;
+                & dl{width:222px;height:25px;padding:18px 0 5px;overflow:hidden;border-top:1px solid #b6b6b6;
+                    & dt{height:18px;margin-bottom:18px;font-size:18px;line-height:18px;font-weight: bold;background:url(../images/goodslist/plus.png) no-repeat right center;}
+                    & dd{height:25px;margin-bottom:15px;font-size:15px;font-weight: bold;}
+                    dd:before{content:'';display:inline-block;width:12px;height: 12px;border: 1px solid #b6b6b6;margin:5px 5px 0 2px;}
+                }
+                & .unfold{width: 222px;height: auto;overflow: visible;
+                    & dt{background: url(../images/goodslist/minus.png) no-repeat right center;}
+                }
+            }
+        }
+        .allpdts{width:750px;height:auto;float:left;
+            .sorting{height:40px;width:100%;
+                & p{height:40px;line-height: 40px;margin:0 29px;font-size:14px;color:#323232;display:inline-block;}
+                & a{display:inline-block;padding:3px 15px;color:#323232;border:1px solid #989898;font-size:14px;}
+                & .pitch{color:#fff;background:#000;}
+            }
+            .shots{display:inline-block;box-sizing: border-box;width:250px;height:300px;position: relative;
+                & a{display:block;width:100%;height:100%;text-align: center;
+                    box-sizing: border-box;position:absolute;
+                    & img{height:165px;width:165px;display: inline-block;margin-bottom: 15px;}
+                    & p{font-size: 14px;color:#323232;width:100%;height:55px;margin-bottom:5px; }
+                    & span{display:block;width:100%;height:18px;font-size:14px;color:#323232;font-weight:bold;}
+                }
+            }
+            .shots:hover{border:1px solid #000;}
+        }
+    }
+}

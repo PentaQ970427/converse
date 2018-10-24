@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/headfoot.min.css">
+        <link rel="stylesheet" href="css/goodsmsg.css">
+        <link rel="stylesheet" href="iconfont/iconfont.css">
+        <script src = 'js/require.js' async="true" defer data-main = "js/main"></script>
+    </head>
+    <body class="iconfont">
+        <div id="stickHeader">
+            <!-- header -->
+            <div id="headbox">
+                <header>
+                    <a href="" id="headLogo">
+                        <img src="images/index/headLogo.png" alt="headLogo" id="headIogoPic">
+                    </a>
+                    <span class="fonts users pull" id="login_1" href="">登录</span>
+                    <span style="margin:0;">/</span>
+                    <span class="fonts users pull" id="register" href="">注册</span>
+                    <span class = 'icon' id="login_2" href=""><div>&#xe68b;</div></span>
+                    <a class="fonts" id="shoppingCar" href="shopcart.html">购物车</a>
+                    <span id="pdtsNum"><div>0</div></span>
+                    <a class = 'icon' id="service" href=""><div>&#xe603;</div></a>
+                    <span class = 'icon pull' id="search" href=""><div>&#xe63f;</div></span>
+                    <a class = 'icon' id="questions" href=""><div>&#xe699;</div></a>
+                </header>
+            </div>
+            <!-- 下拉详细信息 -->
+            <div id="pull_down">
+                <div class="outBox" id="login_box">
+                    <ul>
+                        <!-- 去注册 -->
+                        <li>
+                            <p>还未注册？</p>
+                            <button id="go_register">注册账户<span></span></button>
+                        </li>
+                        <!-- 第三方登陆 -->
+                        <li>
+                            <p>您可以直接登录</p>
+                            <a style="font-size:28px;" href="">&#xe681;</a>
+                            <a href="">&#xe6ff;</a>
+                            <a href="">&#xe622;</a>
+                            <a href="">&#xe60e;</a>
+                        </li>
+                        <!-- 账号密码登陆 -->
+                        <li>
+                            <p>已经成为会员？</p>
+                            <input type="text" id="username" placeholder="邮箱/手机" autocomplete="off">
+                            <input type="password" name="" id="password" placeholder="账户密码" autocomplete="off">
+                            <input type="text" name="" id="checkcode" value="" autocomplete="off">
+                            <div id="checkbox"></div>
+                            <div style="height:20px;width:300px;"><a href="" id="change">换一张</a></div>
+                            <div id="clause">一旦登陆，即表明你同意匡威的<a href="">法律声明</a>和<a href="">使用规则</a></div>
+                            <button type="button" name="" id="sure">登陆<span></span></button>
+                            <div id="remember"><div class="checked"></div>保持登录状态</div>
+                            <a href="" id="forgetPwd">忘记密码？</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 注册信息 -->
+                <div class="outBox" id="register_box">
+                    <dl>
+                        <ul>
+                            <li id="mobileNum">手机号码<b>*</b>
+                                <input class="lInput" type="text" name="" placeholder="135xxxx3333">
+                                <span></span>
+                            </li>
+                            <li id="email">
+                                邮箱<b>*</b>
+                                <input type="text" class="lInput" placeholder="example@converse.com">
+                            </li>
+                            <li id="sex">性别<b>*</b>
+                                <div id="sexBox">
+                                    <div id="male"><div class="checked"></div>男的</div>
+                                    <div id="female"><div></div>女的</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li id="regPwd">输入密码<b>*</b>
+                            <input class="lInput" type="password" placeholder="密码至少为6位字符"><span></span></li>
+                            <li id="surePwd">确认密码<b>*</b>
+                            <input type="password" class="lInput" placeholder="请再次输入密码"></li>
+                            <li id="birth">
+                                生日(年-月-日)<b>*</b>
+                                <div id="birthdayBox">
+                                    <div class='selectBox'>
+                                        <span class="selectYear">2018</span>
+                                        <select class="" id="birthYears">
+                                        </select>
+                                    </div>
+                                    <div class='selectBox'>
+                                        <span class="selectMonth">1</span>
+                                        <select class="" id="birthMonths">
+                                        </select>
+                                    </div>
+                                    <div class='selectBox' style="margin:0;">
+                                        <span class="selectDay">1</span>
+                                        <select class="" id="birthDays">
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li id="regCheck">验证码<b>*</b>
+                                <div id="regCheckBox">
+                                    <input class = 'sInput' class="inputRegCode" type="text" placeholder="请输入验证码">
+                                    <div id="regCheckcode">注册验证码</div>
+                                </div>
+                                <div style="width:300px;height:25px;"><a id="changeCode" href="">换一张</a></div>
+                            </li>
+                            <li id="MobileCheckBox">
+                                短信验证码<b>*</b>
+                                <div id="McheckBox">
+                                    <input type="text" name="" id="inputMobileCode" class="sInput">
+                                    <button id="getMobileCheck">发送短信验证码</button>
+                                </div>
+                            </li>
+                            <li id="sureReg">
+                                <div id="regClause">一旦创建账户，即表明你同意匡威的<a href="">法律声明</a>和<a href="">使用规则</a></div>
+                                <button id="goReg">注册账户</button>
+                            </li>
+                        </ul>
+                    </dl>
+                </div>
+                <div class="outBox" id="search_box">
+                    <div id="searchValue">
+                        <span id="searchTxt">想找什么随便搜</span>
+                        <input id="searchInput" type="text" name="" placeholder="">
+                    </div>
+                    <div id='searchBtnBox'>
+                        <button type="button" name="button" id="searchbtn"></button>
+                        <button type="button" name="button" id="closebtn"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航栏 -->
+            <nav>
+                <ul>
+                    <li>
+                        <a id="nav-man" class="classify" href="">男的</a>
+                    </li>
+                    <li>
+                        <a id="nav-woman" class="classify" href="">女的</a>
+                    </li>
+                    <li>
+                        <a id="navchild" class="classify" href="">儿童</a>
+                    </li>
+                    <li><a href="">型人搭配</a></li>
+                    <li><a href="">联名合作款</a></li>
+                    <li><a href="">店铺分布</a></li>
+                </ul>
+                <div class="categorybox">
+                    <div id="manbox" class="inbox"></div>
+                    <div class="divider1"></div>
+                    <div class="divider2"></div>
+                </div>
+                <div class="categorybox">
+                    <div id="womanbox" class="inbox"></div>
+                    <div class="divider1"></div>
+                    <div class="divider2"></div>
+                </div>
+                <div class="categorybox">
+                    <div id="childbox" class="inbox"></div>
+                    <div class="divider1"></div>
+                    <div class="divider2"></div>
+                </div>
+            </nav>
+        </div>
+        <!-- 页面主体 -->
+        <div class="pagecontent">
+            <div class="blank"></div>
+            <div class="content">
+                <div class="leftcontent">
+                    <div class="share">
+                        <div class="sharetitle">
+                            <i></i><span>分享</span>
+                        </div>
+                        <div class="shareurl">
+                            <a class="weibourl" href=""></a>
+                            <a class="weixinurl" href=""></a>
+                            <a class="tengxunurl" href=""></a>
+                            <a class="renrenurl" href=""></a>
+                            <a class="doubanurl" href=""></a>
+                        </div>
+                    </div>
+                    <div class="collection"><i></i><span>加入收藏(999+)</span></div>
+                    <div class="comments"><i></i><span>(99+)</span></div>
+                </div>
+                <div class="title-pic">
+                    <div class="titleprice">
+                        <h1>【男女同款】Chuck Taylor All Star Core 常青款  中性</h1>
+                        <span>价格  ￥<span style="display:inline;" id='money'>439</span>.00</span>
+                    </div>
+                    <div class="pdtimg">
+                        <div class='zoomPad'>
+                            <img style="display:block;" src="images/goodsmsg/right-m.png" alt="">
+                            <img src="images/goodsmsg/left-m.png" alt="">
+                            <img src="images/goodsmsg/newtop-m.png" alt="">
+                            <img src="images/goodsmsg/oldtop-m.png" alt="">
+                            <img src="images/goodsmsg/newbehind-m.png" alt="">
+                            <img src="images/goodsmsg/oldbehind-m.png" alt="">
+                            <div class="zoomPup"></div>
+                        </div>
+                        <div class="zoomWindow">
+                            <img style="display:block;" src="images/goodsmsg/right-l.png" alt="">
+                            <img src="images/goodsmsg/left-l.png" alt="">
+                            <img src="images/goodsmsg/newtop-l.png" alt="">
+                            <img src="images/goodsmsg/oldtop-l.png" alt="">
+                            <img src="images/goodsmsg/newbehind-l.png" alt="">
+                            <img src="images/goodsmsg/oldbehind-l.png" alt="">
+                        </div>
+                    </div>
+                    <div class="preview">
+                        <a href="" class="on"><img src="images/goodsmsg/right-s.png" alt=""></a>
+                        <a href=""><img src="images/goodsmsg/left-s.png" alt=""></a>
+                        <a href=""><img src="images/goodsmsg/newtop-s.png" alt=""></a>
+                        <a href=""><img src="images/goodsmsg/oldtop-s.png" alt=""></a>
+                        <a href=""><img src="images/goodsmsg/newbehind-s.png" alt=""></a>
+                        <a href=""><img src="images/goodsmsg/oldbehind-s.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="rightcontent">
+                    <div class="choosecolor">
+                        <a href="" id="blue"><img src="images/goodsmsg/blue.png" alt=""></a>
+                        <a href="" id="allblack"><img src="images/goodsmsg/allblack.png" alt=""></a>
+                        <a class="on" href="" id="black"><img src="images/goodsmsg/black.png" alt=""></a>
+                        <a href="" id="white"><img src="images/goodsmsg/white.png" alt=""></a>
+                        <a href="" id="red"><img src="images/goodsmsg/red.png" alt=""></a>
+                    </div>
+                    <div class="model">
+                        <div class="colorModel">色：黑</br>型号：101010001</div>
+                        <div class="shotsize">尺码对照表</div>
+                    </div>
+                    <div class="reference">
+                        <p>尺码换算器</p>
+                        <p>本鞋款尺码通常偏大，建议可选小半码，或对照尺码表。</p>
+                    </div>
+                    <div class="selectsize">
+                        <div class="left">请选择您的尺码</div>
+                        <div class="right">
+                            <span id="showsize">请选择尺码</span>
+                            <i id="sizebtn"></i>
+                            <select id="sizepull" class="" name="">
+                                <option value="0">请选择尺码</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="36.5">36.5</option>
+                                <option value="37">37</option>
+                                <option value="37.5">37.5</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="39.5">39.5</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="41.5">41.5</option>
+                                <option value="42">42</option>
+                                <option value="42.5">42.5</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="44.5">44.5</option>
+                                <option value="45">45</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <div class="left">数量</div>
+                        <div class="right">
+                            <input id="shownum" type="text" name="" value="1">
+                            <i id="numbtn">
+                                <div id="add"></div>
+                                <div id="reduce"></div>
+                            </i>
+                        </div>
+                    </div>
+                    <p id="ssize">请选择尺码</p>
+                    <p id="wrong">请输入正确的数量</p>
+                    <a href="" class="buy" id="buynow">立即购买</a>
+                    <a href="" class="buy" id="addToCart"><i></i>加入购物车</a>
+                </div>
+                <div class="shotmsg">
+                        <dl>
+                            <dt>经典常青</dt>
+                            <dd>经久不衰的纯色经典常青款，鞋身侧边具有标志性的Chuck Tayor All Star 圆形贴标</dd>
+                            <dd>纯粹的帆布面料，高帮系带，保留着Converse的固有传统风格</dd>
+                            <dd>橡胶底耐磨有弹性，鞋底的纹路又有起到防滑的作用</dd>
+                            <dd>鞋底侧边条纹和清晰的装饰纹路，传承了经典</dd>
+                        </dl>
+                        <p style="margin-top:60px;">温馨提示</p>
+                        <p>因商品的新旧更新，本商品在同一个货号情形下，新旧款商品会呈现有两种不同的Logo及其他细微差异，新旧款商品仓库会随机安排发货，如您介意，请您在购买商品前完整查看页面显示新旧款商品图片，谨慎购买。感谢您的关注和理解，祝您购物愉快。</p>
+                        <h3>价格说明（此说明仅当出现价格比较时有效）</h3>
+                        <p>划线价格：划线的价格可能是商品的专柜吊牌价或正品零售价指导价或该商品的曾经展示过的销售价等，仅供您参考。</p>
+                        <p>未划线价格：未划线的价格是商品在官网上的销售标价，具体的成交价格可能因为会员使用优惠券发生变化，最终以订单结算页价格为准。</p>
+                </div>
+            </div>
+            <!-- 底部导航 -->
+            <div id="sitemapbox">
+                <div id="sitemap">
+                    <div class="category-title"></div>
+                    <dl style="margin-left:20px;">
+                        <dt><a href="">男的</a></dt>
+                        <dd><a href="">CHUCKTAYLOR ALL STAR</a></dd>
+                        <dd><a href="">CONVERSECONS</a></dd>
+                        <dd><a href="">JACKPURCELL</a></dd>
+                        <dd class="mgb20"><a href="">CHUCK II</a></dd>
+                        <dd><a href="">踩的</a></dd>
+                        <dd><a href="">穿的</a></dd>
+                        <dd><a href="">戴的</a></dd>
+                        <dd><a href="">优惠</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">女的</a></dt>
+                        <dd><a href="">CHUCKTAYLOR ALL STAR</a></dd>
+                        <dd><a href="">CONVERSECONS</a></dd>
+                        <dd><a href="">JACKPURCELL</a></dd>
+                        <dd class="mgb20"><a href="">CHUCK II</a></dd>
+                        <dd><a href="">踩的</a></dd>
+                        <dd><a href="">穿的</a></dd>
+                        <dd><a href="">戴的</a></dd>
+                        <dd><a href="">优惠</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">儿童</a></dt>
+                        <dd><a href="">CHUCKTAYLOR ALL STAR</a></dd>
+                        <dd><a href="">CONVERSECONS</a></dd>
+                        <dd><a href=""></a></dd>
+                        <dd class="mgb20"><a href=""></a></dd>
+                        <dd><a href="">踩的</a></dd>
+                        <dd><a href="">穿的</a></dd>
+                        <dd><a href="">戴的</a></dd>
+                        <dd><a href="">优惠</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">GLOBAL</a></dt>
+                        <dd><a href="">CONVERSE GLOBAL SITES</a></dd>
+                    </dl>
+                    <dl style="margin-left:90px;">
+                        <dt><a href="">我的账户</a></dt>
+                        <dd><a href="">现有订单</a></dd>
+                        <dd><a href="">过去订单</a></dd>
+                        <dd><a href="">退换货</a></dd>
+                        <dd><a href="">账户设置</a></dd>
+                        <dd><a href="">地址薄</a></dd>
+                        <dd><a href="">优惠券</a></dd>
+                        <dd><a href="">我的收藏</a></dd>
+                        <dd><a href="">我的评论</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">帮助和购物指南</a></dt>
+                        <dd><a href="">账户</a></dd>
+                        <dd><a href="">订单</a></dd>
+                        <dd><a href="">尺码</a></dd>
+                        <dd><a href="">退货和退款</a></dd>
+                        <dd><a href="">换货</a></dd>
+                        <dd><a href="">配饰</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+                        <dd><a href="">常见问题</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="">NIKE</a></dt>
+                        <dd><a href="">NIKE+</a></dd>
+                        <dd><a href="">JORDAN</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <footer>
+            <div id="foot">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">帮助和购物指南</a></li>
+                    <li><a href="">法律声明</a></li>
+                    <li><a href="">使用规则</a></li>
+                </ul>
+                <div id="footlogo"><a href=""></a></div>
+                <p>@匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2<a style="width:200px;height:15px;display:inline-block;" href=""><img style="display:inline-block;" src="images/index/beian.png" alt="">沪公网安备 31011002001667号</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

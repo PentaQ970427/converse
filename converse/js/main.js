@@ -2,12 +2,18 @@ require.config({
     paths:{
         'jquery':'jquery-1.11.3',
         'jquery-cookie':'jquery.cookie',
-        'index':'index'
+        'index':'index',
+        'goods':'goods',
+        'goodsmsg':'goodsmsg',
+        'shopcart':'shopcart'
     },
     shim:{
         'jquery-cookie':['jquery']
     }
 })
-require(['index'],function(index){
+require(['index','goods','goodsmsg','shopcart'],function(index,goods,goodsmsg,shopcart){
     index.main();
+    goods.goods();
+    goodsmsg.goodsmsg();
+    shopcart.shopcart();
 })

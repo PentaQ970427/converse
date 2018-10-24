@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/index.min.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="iconfont/iconfont.css">
+        <link rel="stylesheet" href="css/headfoot.min.css">
         <script src = 'js/require.js' async="true" defer data-main = "js/main"></script>
     </head>
     <body class = 'iconfont'>
@@ -48,10 +49,10 @@
                         <li>
                             <p>已经成为会员？</p>
                             <input type="text" id="username" placeholder="邮箱/手机" autocomplete="off">
-                            <input type="text" name="" id="password" placeholder="账户密码" autocomplete="off">
+                            <input type="password" name="" id="password" placeholder="账户密码" autocomplete="off">
                             <input type="text" name="" id="checkcode" value="" autocomplete="off">
                             <div id="checkbox"></div>
-                            <div style="height:20px;width:300px;"><a href="" id="change">换一张</a></div>
+                            <div style="height:20px;width:300px;"><span id="checkerror"></span><a href="" id="change">换一张</a></div>
                             <div id="clause">一旦登陆，即表明你同意匡威的<a href="">法律声明</a>和<a href="">使用规则</a></div>
                             <button type="button" name="" id="sure">登陆<span></span></button>
                             <div id="remember"><div class="checked"></div>保持登录状态</div>
@@ -70,6 +71,7 @@
                             <li id="email">
                                 邮箱<b>*</b>
                                 <input type="text" class="lInput" placeholder="example@converse.com">
+                                <span></span>
                             </li>
                             <li id="sex">性别<b>*</b>
                                 <div id="sexBox">
@@ -80,9 +82,9 @@
                         </ul>
                         <ul>
                             <li id="regPwd">输入密码<b>*</b>
-                            <input class="lInput" type="text" placeholder="密码至少为6位字符"><span></span></li>
+                            <input class="lInput" type="password" placeholder="密码至少为6位字符"><span></span></li>
                             <li id="surePwd">确认密码<b>*</b>
-                            <input type="text" class="lInput" placeholder="请再次输入密码"></li>
+                            <input type="password" class="lInput" placeholder="请再次输入密码"><span></span></li>
                             <li id="birth">
                                 生日(年-月-日)<b>*</b>
                                 <div id="birthdayBox">
@@ -108,9 +110,9 @@
                             <li id="regCheck">验证码<b>*</b>
                                 <div id="regCheckBox">
                                     <input class = 'sInput' class="inputRegCode" type="text" placeholder="请输入验证码">
-                                    <div id="regCheckcode">注册验证码</div>
+                                    <div id="regCheckcode"></div>
                                 </div>
-                                <div style="width:300px;height:25px;"><a id="changeCode" href="">换一张</a></div>
+                                <div style="width:300px;height:25px;"><span></span><a id="changeCode" href="">换一张</a></div>
                             </li>
                             <li id="MobileCheckBox">
                                 短信验证码<b>*</b>
@@ -140,21 +142,45 @@
             <!-- 导航栏 -->
             <nav>
                 <ul>
-                    <li><a class="classify" href="">男的</a></li>
-                    <li><a class="classify" href="">女的</a></li>
-                    <li><a class="classify" href="">儿童</a></li>
+                    <li>
+                        <a id="nav-man" class="classify" href="">男的</a>
+                    </li>
+                    <li>
+                        <a id="nav-woman" class="classify" href="">女的</a>
+                    </li>
+                    <li>
+                        <a id="navchild" class="classify" href="">儿童</a>
+                    </li>
                     <li><a href="">型人搭配</a></li>
                     <li><a href="">联名合作款</a></li>
                     <li><a href="">店铺分布</a></li>
                 </ul>
+                <div class="categorybox">
+                    <div id="manbox" class="inbox"></div>
+                    <div class="divider1"></div>
+                    <div class="divider2"></div>
+                </div>
+                <div class="categorybox">
+                    <div id="womanbox" class="inbox"></div>
+                    <div class="divider1"></div>
+                    <div class="divider2"></div>
+                </div>
+                <div class="categorybox">
+                    <div id="childbox" class="inbox"></div>
+                    <div class="divider1"></div>
+                    <div class="divider2"></div>
+                </div>
             </nav>
         </div>
+        <!-- 页面主体 -->
         <div id="bodyBox">
+            <!-- 首页提醒 -->
             <div id="indexNotice"><a href="">尊敬的顾客您好，我们店铺是不会泄露您的消费信息的，请放心。另外我们也不会要求获取、收集、使用任何与消费者金融消费类（如：信用卡）信息，如果接到以上信息电话，是属于诈骗电话，请勿相信，以防钱财损失。如您对订单有疑问，请联系在线客服。</a></div>
+            <!-- 轮播图 -->
             <div id="bannerBox">
                 <div id="bannerPic"></div>
-                <div id="lastBanner"></div>
-                <div id="nextBanner"></div>
+                <div id="lastBanner"><span></span></div>
+                <div id="nextBanner"><span></span></div>
                 <ul id="bannerTitle">
                     <li class="select">
                         <a href = ''>JWA</a>
@@ -173,6 +199,180 @@
                     </li>
                 </ul>
             </div>
+            <!-- 热卖单品 -->
+            <div id="hotPdts">
+                <div class="category-title">
+                    <h1>热卖单品</h1>
+                </div>
+                <div class="category"></div>
+                <div class="brand-menu-container">
+                    <div class="brand-menu"></div>
+                </div>
+                <div class = 'hotbox' id="manshot" style="opacity:1;display:block;">
+                    <button type="button" name="button">查看所有男的踩的最新商品</button>
+                </div>
+                <div class = 'hotbox' id="famaleshot">
+                    <button type="button" name="button">查看所有女的踩的最新商品</button>
+                </div>
+                <div class = 'hotbox' id="clothes">
+                    <button type="button" name="button">查看所有穿的最新商品</button>
+                </div>
+                <div class = 'hotbox' id="bag">
+                    <button type="button" name="button">查看所有戴的最新商品</button>
+                </div>
+            </div>
+            <!-- 新品热荐 -->
+            <div id="newPdts">
+                <div class="category-title">
+                    <h1>新品热荐</h1>
+                </div>
+                <div id="newbox">
+                    <div class="dashed" style = 'top:25%'></div>
+                    <div class="dashed" style = 'top:50%'></div>
+                    <div class="dashed" style = 'top:76%'></div>
+                </div>
+            </div>
+            <!-- 部分商品简介 -->
+            <div class="specialfeature">
+                <div class="specialfeature-title">
+                    <img src="images/index/logo-icon.png" alt="">
+                    <span>街头先型</span>
+                </div>
+                <div class="specialbox">
+                    <div class="specialpdts">
+                        <a class="a-img" href=""><img src="images/index/special1.jpg" alt=""></a>
+                        <a class="a-txt" href="">
+                            <h1>只用细节说话</h1>
+                            <p>Chuck Taylor All Star’70延续70鞋款的经典鞋型设计，偏窄鞋头与修长鞋型上脚优雅显瘦。同时鞋面采用舒适强韧的帆布材料，提升了品质感。沿用至今的复古大鞋舌，不对称鞋头挡泥板与光亮的鞋围条细节，加厚海绵鞋垫提升了舒适度。</p>
+                        </a>
+                        <button type="button" class="showmore" name="button">查看更多</button>
+                    </div>
+                    <div class="specialpdts" style="float:right;">
+                        <a class="a-img" href=""><img src="images/index/special2.jpg" alt=""></a>
+                        <a class="a-txt" href="">
+                            <h1>拒绝打分</h1>
+                            <p>经典款"ONE STAR"款式，自然优雅，从视觉上放松人们的心情。融入SKATE元素，源于纽约街头设计灵感，呈现出舒适的穿着体验，行走舒适自如，让你尽享运动中的乐趣。</p>
+                        </a>
+                        <button type="button" class="showmore" name="button">查看更多</button>
+                    </div>
+                </div>
+            </div>
+            <div class="specialfeature">
+                <div class="specialfeature-title">
+                    <img src="images/index/logo-icon.png" alt="">
+                    <span>至酷精选 玩转潮流</span>
+                </div>
+                <div class="specialbox" style="height:400px;">
+                    <div class="specialpdts2">
+                        <a href="" class="a-img2"><img src="images/index/special3.jpg" alt=""></a>
+                        <a href="" class="a-txt"><h1>功能夹克</h1><p>让整体焕发出新的生命力，年轻感强烈。</p></a>
+                        <a class="more" href="">查看更多</a>
+                    </div>
+                    <div class="specialpdts2">
+                        <a href="" class="a-img2"><img src="images/index/special4.jpg" alt=""></a>
+                        <a href="" class="a-txt"><h1>双面有型</h1><p>拉链外套，让整体焕发出新的生命力，年轻感强烈。采用轻薄材质面料，轻质可打包，穿着柔软舒适，增添几分华丽气息。</p></a>
+                        <a class="more" href="">查看更多</a>
+                    </div>
+                    <div class="specialpdts2" style="margin-right:0;">
+                        <a href="" class="a-img2"><img src="images/index/special5.jpg" alt=""></a>
+                        <a href="" class="a-txt"><h1>造型加分</h1><p>拥有多功能的内部口袋及电脑插袋，满足工作与休闲的双重需求。可调节软垫背带，赋予舒适的背包体验。</p></a>
+                        <a class="more" href="">查看更多</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div id="focus">
+            <h1>关注CONVERSE</h1>
+            <p>Converse同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注Converse的最新产品与资讯。</p>
+            <div id="share-area">
+                <a id="weibo" href=""></a>
+                <a id="wechat" href=""></a>
+                <a id="tencentweibo" href=""></a>
+                <a id="renren" href=""></a>
+                <a id="douban" href=""></a>
+            </div>
+        </div>
+        <div id="sitemapbox">
+            <div id="sitemap">
+                <div class="category-title"></div>
+                <dl style="margin-left:20px;">
+                    <dt><a href="">男的</a></dt>
+                    <dd><a href="">CHUCKTAYLOR ALL STAR</a></dd>
+                    <dd><a href="">CONVERSECONS</a></dd>
+                    <dd><a href="">JACKPURCELL</a></dd>
+                    <dd class="mgb20"><a href="">CHUCK II</a></dd>
+                    <dd><a href="">踩的</a></dd>
+                    <dd><a href="">穿的</a></dd>
+                    <dd><a href="">戴的</a></dd>
+                    <dd><a href="">优惠</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">女的</a></dt>
+                    <dd><a href="">CHUCKTAYLOR ALL STAR</a></dd>
+                    <dd><a href="">CONVERSECONS</a></dd>
+                    <dd><a href="">JACKPURCELL</a></dd>
+                    <dd class="mgb20"><a href="">CHUCK II</a></dd>
+                    <dd><a href="">踩的</a></dd>
+                    <dd><a href="">穿的</a></dd>
+                    <dd><a href="">戴的</a></dd>
+                    <dd><a href="">优惠</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">儿童</a></dt>
+                    <dd><a href="">CHUCKTAYLOR ALL STAR</a></dd>
+                    <dd><a href="">CONVERSECONS</a></dd>
+                    <dd><a href=""></a></dd>
+                    <dd class="mgb20"><a href=""></a></dd>
+                    <dd><a href="">踩的</a></dd>
+                    <dd><a href="">穿的</a></dd>
+                    <dd><a href="">戴的</a></dd>
+                    <dd><a href="">优惠</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">GLOBAL</a></dt>
+                    <dd><a href="">CONVERSE GLOBAL SITES</a></dd>
+                </dl>
+                <dl style="margin-left:90px;">
+                    <dt><a href="">我的账户</a></dt>
+                    <dd><a href="">现有订单</a></dd>
+                    <dd><a href="">过去订单</a></dd>
+                    <dd><a href="">退换货</a></dd>
+                    <dd><a href="">账户设置</a></dd>
+                    <dd><a href="">地址薄</a></dd>
+                    <dd><a href="">优惠券</a></dd>
+                    <dd><a href="">我的收藏</a></dd>
+                    <dd><a href="">我的评论</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">帮助和购物指南</a></dt>
+                    <dd><a href="">账户</a></dd>
+                    <dd><a href="">订单</a></dd>
+                    <dd><a href="">尺码</a></dd>
+                    <dd><a href="">退货和退款</a></dd>
+                    <dd><a href="">换货</a></dd>
+                    <dd><a href="">配饰</a></dd>
+                    <dd><a href="">联系我们</a></dd>
+                    <dd><a href="">常见问题</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="">NIKE</a></dt>
+                    <dd><a href="">NIKE+</a></dd>
+                    <dd><a href="">JORDAN</a></dd>
+                </dl>
+            </div>
+        </div>
+        <!-- 页脚 -->
+        <footer>
+            <div id="foot">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">帮助和购物指南</a></li>
+                    <li><a href="">法律声明</a></li>
+                    <li><a href="">使用规则</a></li>
+                </ul>
+                <div id="footlogo"><a href=""></a></div>
+                <p>@匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2<a style="width:200px;height:15px;display:inline-block;" href=""><img style="display:inline-block;" src="images/index/beian.png" alt="">沪公网安备 31011002001667号</a></p>
+            </div>
+        </footer>
     </body>
 </html>
